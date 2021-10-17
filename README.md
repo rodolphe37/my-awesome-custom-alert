@@ -1,14 +1,14 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/rodolphe37/my-simple-tasks-manager-/blob/main/LICENSE)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/rodolphe37/my-simple-tasks-manager-/graphs/commit-activity)
-[![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://github.com/rodolphe37/my-simple-tasks-manager-)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/rodolphe37/my-awesome-custom-alert/blob/main/LICENSE)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/rodolphe37/my-awesome-custom-alert/graphs/commit-activity)
+[![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://github.com/rodolphe37/my-awesome-custom-alert)
 [![JavaScript](https://img.shields.io/badge/--F7DF1E?logo=javascript&logoColor=000)](https://www.javascript.com/)
-[![GitHub issues](https://badgen.net/github/issues/rodolphe37/my-simple-tasks-manager-/)](https://github.com/rodolphe37/my-simple-tasks-manager-/issues)
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/rodolphe37/my-simple-tasks-manager-)
+[![GitHub issues](https://badgen.net/github/issues/rodolphe37/my-awesome-custom-alert/)](https://github.com/rodolphe37/my-awesome-custom-alert/issues)
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/rodolphe37/my-awesome-custom-alert)
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
 
 
 [![Website](https://i.imgur.com/xSu6S5v.png)](https://rodolphe-augusto.fr)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2a27fa4a-4979-4f11-81f5-17e680c3d5f8/deploy-status)](https://app.netlify.com/sites/wizardly-hoover-d92a3e/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/01423cf3-7b10-445e-8859-7133f4255759/deploy-status)](https://app.netlify.com/sites/my-awesome-custom-alert/deploys)
 
 # Documentation
 
@@ -18,7 +18,9 @@
 
 it's a reusable custom alert component!
 
-#### :bookmark: We often need to implement modals or notification alerts to users... Why not do it simply and with a little fun? 😉😃😄 A single component with four possibilities - success, info, warning & error, as well as the option with or without a button embedded in the modal.
+#### :bookmark: We often need to implement modals or notification alerts to users... Why not do it simply and with a little fun?
+
+#### 😉😃😄 A single component with four possibilities - success, info, warning & error, as well as the option with or without a button embedded in the modal.
 
 
 
@@ -260,6 +262,7 @@ export default ExampleComponent;
 
 ---
 
+###And... voilà! you have your awesome alert component§
 
 ## :bust_in_silhouette: Author
 
@@ -270,10 +273,6 @@ export default ExampleComponent;
 ## :large_blue_diamond: A few words from the author
 
 Enjoy the World :smirk:
-
-**:memo: To Do for the next version:**
-
->:bar_chart: Add csv export.
 
 ---
 
