@@ -32,6 +32,7 @@ it's a reusable custom alert component!
 
 
 **You can test My Awesome Custom Alert demo** **[here](https://my-awesome-custom-alert.netlify.app/)**,
+
 **And the version with input for writing what you want during test** **[here](https://reusable-alert-tutorial.netlify.app/)**,
 
 ---
@@ -74,7 +75,7 @@ OK, the interesting part begins!
 
 ```javascript
 import { useState } from "react";
-import CustomAlerComponent from "./components/customAlert/CustomAlertComponent";
+import CustomAlertComponent from "./components/customAlert/CustomAlertComponent";
 
 const ExampleComponent = () => {
    const [displaySuccess, setDisplaySuccess] = useState(false);
@@ -125,7 +126,7 @@ export default ExampleComponent;
 
 ```javascript
 import { useState } from "react";
-import CustomAlerComponent from "./components/customAlert/CustomAlertComponent";
+import CustomAlertComponent from "./components/customAlert/CustomAlertComponent";
 
 const ExampleComponent = () => {
    const [displayInfo, setDisplayInfo] = useState(false);
@@ -171,7 +172,7 @@ export default ExampleComponent;
 
 ```javascript
 import { useState } from "react";
-import CustomAlerComponent from "./components/customAlert/CustomAlertComponent";
+import CustomAlertComponent from "./components/customAlert/CustomAlertComponent";
 
 const ExampleComponent = () => {
    const [displayWarning, setDisplayWarning] = useState(false);
@@ -216,7 +217,7 @@ export default ExampleComponent;
 
 ```javascript
 import { useState } from "react";
-import CustomAlerComponent from "./components/customAlert/CustomAlertComponent";
+import CustomAlertComponent from "./components/customAlert/CustomAlertComponent";
 
 const ExampleComponent = () => {
    const [displayError, setDisplayError] = useState(false);
