@@ -69,7 +69,7 @@ OK, the interesting part begins!
 
 ### Step2 - Code implementation!
 
->:heavy_check_mark: All of this examples are the most simple form, of course you can use this component at you fetch/axios response or more complexe usecases.
+>:heavy_check_mark: All of this examples are the most simple form, of course you can use this component at your fetch/axios responses or more complexe usecases.
 
 ***Let's start with the Success option:***
 
