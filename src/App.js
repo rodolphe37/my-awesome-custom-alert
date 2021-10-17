@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import CustomAlerComponent from "./components/customAlert/CustomAlertComponent";
+import CustomAlertComponent from "./components/customAlert/CustomAlertComponent";
 import AppPicture from "./assets/componentPicture.svg";
 
 function App() {
@@ -48,7 +48,7 @@ function App() {
 
   // Component with Custom alert success
   const SuccessAlert = () => (
-    <CustomAlerComponent
+    <CustomAlertComponent
       success
       successMessage="yay, everything is working."
       // If you dont want button, remove this line below - if you want a button just type withButton and that's all.
@@ -57,7 +57,7 @@ function App() {
   );
   // Component with Custom alert info
   const InfoAlert = () => (
-    <CustomAlerComponent
+    <CustomAlertComponent
       info
       infoMessage="info! be read carefully."
       // If you dont want button, remove this line below - if you want a button just type withButton and that's all.
@@ -66,7 +66,7 @@ function App() {
   );
   // Component with Custom alert warning
   const WarningAlert = () => (
-    <CustomAlerComponent
+    <CustomAlertComponent
       warning
       warningMessage="Be careful what you ask for, you might end up with this!"
       // If you dont want button, remove this line below - if you want a button just type withButton and that's all.
@@ -75,7 +75,7 @@ function App() {
   );
   // Component with Custom alert Error
   const ErrorAlert = () => (
-    <CustomAlerComponent
+    <CustomAlertComponent
       error
       errorMessage="oh no, something went wrong."
       // If you dont want button, remove this line below - if you want a button just type withButton and that's all.
