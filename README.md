@@ -275,8 +275,9 @@ export default ExampleComponent;
 
 ## For more style customization!
 
->you can change all styles (color, animation, resize the modal...)
-For that you must go to the customeAlertStyle.css, all css styles for all usercase are here and commented
+>you can change all styles (colors, animations, resize the modal...)
+>
+>For that you must go to the customeAlertStyle.css, all css styles for all usercase are here and commented!
 
 ### And... voilà! you have your awesome reusable custom alert component!
 
