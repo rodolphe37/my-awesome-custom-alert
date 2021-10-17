@@ -1,0 +1,718 @@
+/* Global */
+.mt20 {
+  margin-bottom: 6em !important;
+}
+.mt2 {
+  margin-bottom: -2em !important;
+}
+
+.alert-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  top: -22px !important;
+}
+
+.alert-box-content {
+  font-family: "Lato", Courier, monospace;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#alert-container {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 60%;
+  height: 35vh;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.alert-text {
+  font-weight: 700;
+  letter-spacing: 5px;
+  font-size: 1.8em;
+  font-weight: 400;
+  letter-spacing: 3px;
+  padding-top: 5px;
+  color: #fcfcfc;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.alert-parag {
+  margin-top: -36px;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #5e5e5e;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 21px;
+  word-wrap: break-word;
+  width: 89%;
+}
+.green-text {
+  color: #4ec07d;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.red-text {
+  color: #e96075;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.blue-text {
+  color: #2196f3;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.button-box,
+.dot {
+  cursor: pointer;
+}
+.button-box h1 {
+  font-weight: bold;
+}
+
+#success-box {
+  position: absolute;
+  width: 41%;
+  height: 89%;
+  left: 27%;
+  background: linear-gradient(to bottom right, #b0db7d 40%, #99dbb4 100%);
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px rgb(0 0 0 / 50%);
+  perspective: 40px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#error-box {
+  position: absolute;
+  width: 41%;
+  height: 89%;
+  right: 33%;
+  background: linear-gradient(to bottom left, #ef8d9c 40%, #ffc39e 100%);
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px rgb(0 0 0 / 50%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#warning-box {
+  position: absolute;
+  width: 41%;
+  height: 89%;
+  right: 33%;
+  background: linear-gradient(to bottom left, #f0e05a 40%, #dcb299 100%);
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px rgb(0 0 0 / 50%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+#info-box {
+  position: absolute;
+  width: 41%;
+  height: 89%;
+  right: 33%;
+  background: linear-gradient(to bottom left, #69b1ea 40%, #00bcd4 100%);
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px rgb(0 0 0 / 50%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.dot {
+  width: 25px;
+  height: 25px;
+  background: #fcfcfc;
+  border-radius: 50%;
+  position: absolute;
+  top: 4%;
+  right: 6%;
+  color: #877d7d;
+  font-size: 19px;
+  transition: background 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dot:hover {
+  background: #c9c9c9;
+  transition: background 0.5s ease-in-out;
+}
+
+/* Success emoji container */
+.face {
+  position: relative;
+  width: 22%;
+  height: 24%;
+  background: transparent;
+  border-radius: 50%;
+  border: none;
+  top: -65%;
+  z-index: 2;
+  animation: bounce 1s ease-in infinite;
+}
+@keyframes bounce {
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Error emoji container */
+.face2 {
+  position: absolute;
+  width: 24%;
+  height: 20%;
+  background: transparent;
+  border-radius: 50%;
+  border: none;
+  top: 11%;
+  z-index: 2;
+  animation: roll 3s ease-in-out infinite;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0deg);
+    left: 25%;
+  }
+  50% {
+    left: 60%;
+    transform: rotate(168deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    left: 25%;
+  }
+}
+
+/* Warning emoji container */
+.face3 {
+  position: relative;
+  width: 37%;
+  height: 37%;
+  background: transparent;
+  border-radius: 50%;
+  border: none;
+  top: -58%;
+  z-index: 2;
+  animation: bounce 1s ease-in infinite;
+}
+#covid-19 {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.2);
+}
+
+/* Info emoji container */
+.face4 {
+  position: absolute;
+  width: 22%;
+  height: 24%;
+  background: transparent;
+  border-radius: 50%;
+  border: none;
+  top: 11%;
+  z-index: 2;
+}
+
+.right {
+  left: 68%;
+}
+
+.shadow {
+  position: absolute;
+  width: 21%;
+  height: 3%;
+  opacity: 0.5;
+  background: #777777;
+  left: 39%;
+  top: 33%;
+  border-radius: 50%;
+  z-index: 1;
+}
+#warning-box .shadow {
+  top: 33% !important;
+}
+#error-box .shadow {
+  top: 33% !important;
+}
+
+.scale {
+  animation: scale 1s ease-in infinite;
+}
+@keyframes scale {
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+.move {
+  animation: move 3s ease-in-out infinite;
+}
+@keyframes move {
+  0% {
+    left: 25%;
+  }
+  50% {
+    left: 60%;
+  }
+  100% {
+    left: 25%;
+  }
+}
+
+.message {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 86%;
+  position: absolute;
+}
+
+.messageWithoutButton {
+  bottom: -10%;
+}
+
+.button-box {
+  position: absolute;
+  background: #fcfcfc;
+  width: 50%;
+  height: 15%;
+  border-radius: 20px;
+  top: 73%;
+  left: 25%;
+  outline: 0;
+  border: none;
+  box-shadow: 2px 2px 10px rgba(119, 119, 119, 0.5);
+  transition: all 0.5s ease-in-out;
+}
+.button-box:hover {
+  background: #efefef;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+/* EMOJI */
+
+/* emoji all */
+.emoji {
+  width: 120px;
+  height: 120px;
+  margin: 15px 15px 40px;
+  background: #ffda6a;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+}
+.emoji:after {
+  position: absolute;
+  bottom: -40px;
+  font-size: 18px;
+  width: 60px;
+  left: calc(50% - 30px);
+  color: #8a8a8a;
+}
+
+.emoji__face,
+.emoji__eyebrows,
+.emoji__eyes,
+.emoji__mouth,
+.emoji__face:before,
+.emoji__face:after,
+.emoji__eyebrows:before,
+.emoji__eyebrows:after,
+.emoji__eyes:before,
+.emoji__eyes:after,
+.emoji__mouth:before,
+.emoji__mouth:after,
+.emoji__hand:before,
+.emoji__hand:after,
+.emoji__thumb:before,
+.emoji__thumb:after {
+  position: absolute;
+  content: "";
+}
+
+.emoji__face {
+  width: inherit;
+  height: inherit;
+}
+
+/* Emoji angry */
+
+.emoji--angry {
+  background: linear-gradient(#d5234c -10%, #ffda6a);
+  background-size: 100%;
+  animation: angry-color 2s ease-in infinite;
+  transform: scale(0.5) rotate(280deg);
+  position: absolute;
+  top: -45px;
+  left: -44px;
+}
+@keyframes angry-color {
+  45%,
+  60% {
+    background-size: 250%;
+  }
+  85%,
+  100%,
+  0% {
+    background-size: 100%;
+  }
+}
+
+.emoji--angry .emoji__face {
+  animation: angry-face 2s ease-in infinite;
+}
+@keyframes angry-face {
+  35%,
+  60% {
+    transform: translateX(0) translateY(10px) scale(0.9);
+  }
+  40% {
+    transform: translateX(-5px) translateY(10px) scale(0.9);
+  }
+  45% {
+    transform: translateX(5px) translateY(10px) scale(0.9);
+  }
+  50% {
+    transform: translateX(-5px) translateY(10px) scale(0.9);
+  }
+  55% {
+    transform: translateX(5px) translateY(10px) scale(0.9);
+  }
+}
+
+.emoji--angry .emoji__eyebrows {
+  left: calc(50% - 3px);
+  top: 55px;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: -44px 5px 0 0 #000000, -7px 16px 0 0 #000000, 7px 16px 0 0 #000000,
+    44px 5px 0 0 #000000;
+}
+.emoji--angry .emoji__eyebrows:before,
+.emoji--angry .emoji__eyebrows:after {
+  width: 50px;
+  height: 20px;
+  border: 6px solid #000000;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  top: 0;
+  left: calc(50% - 25px);
+}
+.emoji--angry .emoji__eyebrows:before {
+  margin-left: -25px;
+  transform: rotate(15deg);
+}
+.emoji--angry .emoji__eyebrows:after {
+  margin-left: 25px;
+  transform: rotate(-15deg);
+}
+.emoji--angry .emoji__eyes {
+  width: 12px;
+  height: 12px;
+  left: calc(50% - 6px);
+  top: 70px;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: 25px 0 0 0 #000000, -25px 0 0 0 #000000;
+}
+.emoji--angry .emoji__mouth {
+  width: 36px;
+  height: 18px;
+  left: calc(50% - 18px);
+  bottom: 15px;
+  background: #000000;
+  border-radius: 50%;
+  animation: angry-mouth 2s ease-in infinite;
+}
+
+@keyframes angry-mouth {
+  25%,
+  50% {
+    height: 6px;
+    bottom: 25px;
+  }
+}
+
+/* Emoji Yay */
+
+.emoji--yay {
+  transform: scale(0.5) translate(-9.7em, -50px);
+}
+
+.emoji--yay .emoji__face {
+  -webkit-animation: yay 1s linear infinite alternate;
+  animation: yay 1s linear infinite alternate;
+}
+@keyframes yay {
+  25% {
+    transform: rotate(-15deg);
+  }
+  75% {
+    transform: rotate(15deg);
+  }
+}
+.emoji--yay .emoji__eyebrows {
+  left: calc(50% - 3px);
+  top: 30px;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: -6px 0 0 0 #000000, -36px 0 0 0px #000000, 6px 0 0 0 #000000,
+    36px 0 0 0px #000000;
+}
+.emoji--yay .emoji__eyebrows:before,
+.emoji--yay .emoji__eyebrows:after {
+  width: 36px;
+  height: 18px;
+  border-radius: 60px 60px 0 0;
+  background: transparent;
+  border: 6px solid black;
+  box-sizing: border-box;
+  border-bottom: 0;
+  bottom: 3px;
+  left: calc(50% - 18px);
+}
+.emoji--yay .emoji__eyebrows:before {
+  margin-left: -21px;
+}
+.emoji--yay .emoji__eyebrows:after {
+  margin-left: 21px;
+}
+.emoji--yay .emoji__mouth {
+  top: 60px;
+  background: transparent;
+  left: 50%;
+}
+.emoji--yay .emoji__mouth:after {
+  width: 80px;
+  height: 80px;
+  left: calc(50% - 40px);
+  top: -75px;
+  border-radius: 50%;
+  background: transparent;
+  border: 6px solid #000000;
+  box-sizing: border-box;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  z-index: 1;
+}
+.emoji--yay .emoji__mouth:before {
+  width: 6px;
+  height: 6px;
+  background: transparent;
+  border-radius: 50%;
+  bottom: 5px;
+  left: calc(50% - 3px);
+  box-shadow: -25px 0 0 0 #000000, 25px 0 0 0 #000000,
+    -35px -2px 30px 10px #d5234c, 35px -2px 30px 10px #d5234c;
+}
+
+/* Emoji wow */
+.emoji--wow {
+  transform: scale(0.5) translate(-9.7em, -3em);
+  z-index: 10;
+}
+.emoji--wow .emoji__face {
+  animation: wow-face 3s linear infinite;
+}
+@keyframes wow-face {
+  15%,
+  25% {
+    transform: rotate(20deg) translateX(-25px);
+  }
+
+  45%,
+  65% {
+    transform: rotate(-20deg) translateX(25px);
+  }
+
+  75%,
+  100% {
+    transform: rotate(0deg) translateX(0);
+  }
+}
+
+.emoji--wow .emoji__eyebrows {
+  left: calc(50% - 3px);
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: -18px 0 0 0 #000000, -33px 0 0 0 #000000, 18px 0 0 0 #000000,
+    33px 0 0 0 #000000;
+  animation: wow-brow 3s linear infinite;
+}
+@keyframes wow-brow {
+  15%,
+  65% {
+    top: 25px;
+  }
+
+  75%,
+  100%,
+  0% {
+    top: 15px;
+  }
+}
+
+.emoji--wow .emoji__eyebrows:before,
+.emoji--wow .emoji__eyebrows:after {
+  width: 24px;
+  height: 20px;
+  border: 6px solid #000000;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  top: -3px;
+  left: calc(50% - 12px);
+}
+
+.emoji--wow .emoji__eyebrows:before {
+  margin-left: -25px;
+}
+
+.emoji--wow .emoji__eyebrows:after {
+  margin-left: 25px;
+}
+
+.emoji--wow .emoji__eyes {
+  width: 16px;
+  height: 24px;
+  left: calc(50% - 8px);
+  top: 35px;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: 25px 0 0 0 #000000, -25px 0 0 0 #000000;
+}
+
+.emoji--wow .emoji__mouth {
+  width: 30px;
+  height: 45px;
+  left: calc(50% - 15px);
+  top: 50%;
+  border-radius: 50%;
+  background: #000000;
+  animation: wow-mouth 3s linear infinite;
+}
+@keyframes wow-mouth {
+  10%,
+  30% {
+    width: 20px;
+    height: 20px;
+    left: calc(50% - 10px);
+  }
+
+  50%,
+  70% {
+    width: 30px;
+    height: 40px;
+    left: calc(50% - 15px);
+  }
+
+  75%,
+  100% {
+    height: 50px;
+  }
+}
+
+/* Media queries */
+
+/* Phones */
+@media screen and (max-width: 500px) {
+  #alert-container {
+    width: 100%;
+    height: 44vh;
+  }
+  #warning-box,
+  #error-box,
+  #success-box,
+  #info-box {
+    width: 74%;
+    right: 14%;
+    left: auto;
+  }
+  .face3 {
+    width: 40% !important;
+  }
+  #warning-box .shadow {
+    top: 35% !important;
+  }
+  .alert-parag {
+    font-size: 0.8em;
+    color: #000;
+  }
+  .alert-text {
+    font-size: 1.32em;
+  }
+  .green-text,
+  .red-text,
+  .alert-text,
+  .alert-parag {
+    font-weight: bold;
+  }
+  .face,
+  .face2 {
+    height: 22%;
+  }
+  .emoji--yay {
+    transform: scale(0.4) translate(-12em, -82px) !important;
+  }
+  .emoji--wow {
+    transform: scale(0.5) translate(-10em, -4em);
+  }
+  .success-box .shadow {
+    top: 7em;
+  }
+}
+/* Medium screens */
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  #alert-container {
+    max-height: 42vh;
+  }
+  .face {
+    top: -70% !important;
+  }
+}
+
+/* big screens */
+@media screen and (min-width: 1600px) {
+  #covid-19 {
+    scale: 1.1;
+  }
+  #warning-box .shadow {
+    top: 39% !important;
+  }
+}

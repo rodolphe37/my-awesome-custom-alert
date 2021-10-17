@@ -1,70 +1,298 @@
-# Getting Started with Create React App
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/rodolphe37/my-simple-tasks-manager-/blob/main/LICENSE)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/rodolphe37/my-simple-tasks-manager-/graphs/commit-activity)
+[![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://github.com/rodolphe37/my-simple-tasks-manager-)
+[![JavaScript](https://img.shields.io/badge/--F7DF1E?logo=javascript&logoColor=000)](https://www.javascript.com/)
+[![GitHub issues](https://badgen.net/github/issues/rodolphe37/my-simple-tasks-manager-/)](https://github.com/rodolphe37/my-simple-tasks-manager-/issues)
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/rodolphe37/my-simple-tasks-manager-)
+[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+[![Website](https://i.imgur.com/xSu6S5v.png)](https://rodolphe-augusto.fr)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2a27fa4a-4979-4f11-81f5-17e680c3d5f8/deploy-status)](https://app.netlify.com/sites/wizardly-hoover-d92a3e/deploys)
 
-In the project directory, you can run:
+# Documentation
 
-### `yarn start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## My Awesome Custom Alert
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+it's a reusable custom alert component!
 
-### `yarn test`
+#### :bookmark: We often need to implement modals or notification alerts to users... Why not do it simply and with a little fun? 😉😃😄 A single component with four possibilities - success, info, warning & error, as well as the option with or without a button embedded in the modal.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![alt text](demo/demo.gif "My AwesomeCustom Alert")
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+### :computer: Online sites
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**You can test My Awesome Custom Alert demo** **[here](https://my-awesome-custom-alert.netlify.app/)**,
+**And the version with input for writing what you want during test** **[here](https://reusable-alert-tutorial.netlify.app/)**,
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+**:heavy_check_mark: The Error modal**
 
-## Learn More
+![alt text](demo/error.png "My AwesomeCustom Alert")
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
+## Arguments and options!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```javascript
+  success, // boolean value for appear or not the success window
+  successMessage, // string message success
+  error, //boolean value for appear or not the error window
+  errorMessage, // string message error
+  warning, // boolean value for appear or not the warning window
+  warningMessage, // string message warning
+  info, // boolean value for appear or not the info window
+  infoMessage, // string message info
+  withButton, // boolean value for appear or desappear the button window for all types of alert (by default is true)
 
-### Code Splitting
+```
+>:heavy_check_mark: Important!
+When you do not display a button in the alert window, the modal closes automatically after 4 seconds.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
+## How to use this component?
 
-### Analyzing the Bundle Size
+>This component does not use any external library, only React.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Step1 - Copy the component!
 
-### Making a Progressive Web App
+>First of all, you have to copy the customAlert folder (which is in the components folder)...
+Then paste this folder and its content into the components folder of your application!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![alt text](demo/step1.png "My AwesomeCustom Alert")
 
-### Advanced Configuration
+OK, the interesting part begins!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Step2 - Code implementation!
 
-### Deployment
+>:heavy_check_mark: All of this examples are the most simple form, of course you can use this component at you fetch/axios response or more complexe usecases.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+***Let's start with the Success option:***
 
-### `yarn build` fails to minify
+```javascript
+import { useState } from "react";
+import CustomAlerComponent from "./components/customAlert/CustomAlertComponent";
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+const ExampleComponent = () => {
+   const [displaySuccess, setDisplaySuccess] = useState(false);
+
+     // This function display the success alert
+  const handleClickSuccess = () => {
+    setDisplaySuccess(true);
+    // Your code here
+  };
+
+   // Component with Custom alert success
+  const SuccessAlert = () => (
+    <CustomAlerComponent
+      success
+      successMessage="yay, everything is working."
+      // If you dont want button, just remove this line below.
+      withButton
+    />
+  );
+
+  return (
+    <div>
+      {displaySuccess && (
+        <div className="slide-in-top">
+          <SuccessAlert />
+        </div>
+      )}
+      <div className="button-container">
+        <button className="button-boxApp" onClick={handleClickSuccess}>
+          Success Alert
+        </button>
+      </div>
+    </div>
+  )
+};
+
+export default ExampleComponent;
+
+```
+
+**:heavy_check_mark: The Result**
+
+![alt text](demo/success.png "My AwesomeCustom Alert")
+
+---
+
+***Next, the Info option:***
+
+```javascript
+import { useState } from "react";
+import CustomAlerComponent from "./components/customAlert/CustomAlertComponent";
+
+const ExampleComponent = () => {
+   const [displayInfo, setDisplayInfo] = useState(false);
+
+     // This function display the Info alert
+  const handleClickInfo = () => {
+    setDisplayInfo(true);
+  };
+
+  // Component with Custom alert info
+  const InfoAlert = () => (
+    <CustomAlerComponent
+      info
+      infoMessage="info! be read carefully."
+      // If you dont want button, remove this line below.
+      withButton
+    />
+  );
+
+  return (
+    <div>
+      {displayInfo && (
+        <div className="swing-in-top-fwd">
+          <InfoAlert />
+        </div>
+      )}
+    </div>
+  )
+};
+
+export default ExampleComponent;
+
+```
+
+**:heavy_check_mark: The Result**
+
+![alt text](demo/info.png "My AwesomeCustom Alert")
+
+---
+
+
+***Another Option, the warning alert:***
+
+```javascript
+import { useState } from "react";
+import CustomAlerComponent from "./components/customAlert/CustomAlertComponent";
+
+const ExampleComponent = () => {
+   const [displayWarning, setDisplayWarning] = useState(false);
+
+     // This function display the warning alert
+  const handleClickWarning = () => {
+    setDisplayWarning(true);
+  };
+
+  // Component with Custom alert warning
+  const WarningAlert = () => (
+    <CustomAlerComponent
+      warning
+      warningMessage="Be careful what you ask for, you might end up with this!"
+      // If you dont want button, remove this line below.
+      withButton
+    />
+  );
+
+  return (
+    <div>
+      {displayWarning && (
+        <div className="bounce-in-top">
+          <WarningAlert />
+        </div>
+      )}
+    </div>
+  )
+};
+
+export default ExampleComponent;
+
+```
+
+**:heavy_check_mark: The Result**
+
+![alt text](demo/warning.png "My AwesomeCustom Alert")
+
+---
+
+***And Then, finally the Error alert:***
+
+```javascript
+import { useState } from "react";
+import CustomAlerComponent from "./components/customAlert/CustomAlertComponent";
+
+const ExampleComponent = () => {
+   const [displayError, setDisplayError] = useState(false);
+
+     // This function display the Error alert
+  const handleClickError = () => {
+    setDisplayError(true);
+  };
+
+  // Component with Custom alert Error
+  const ErrorAlert = () => (
+    <CustomAlerComponent
+      error
+      errorMessage="oh no, something went wrong."
+      // If you dont want button, remove this line below.
+      withButton
+    />
+  );
+
+  return (
+    <div>
+      {displayError && (
+        <div className="bounce-in-top">
+          <ErrorAlert />
+        </div>
+      )}
+    </div>
+  )
+};
+
+export default ExampleComponent;
+
+```
+
+**:heavy_check_mark: The Result**
+
+![alt text](demo/error.png "My AwesomeCustom Alert")
+
+---
+
+
+## :bust_in_silhouette: Author
+
+- Thought, designed and developed with :purple_heart: by Rodolphe Augusto
+
+---
+
+## :large_blue_diamond: A few words from the author
+
+Enjoy the World :smirk:
+
+**:memo: To Do for the next version:**
+
+>:bar_chart: Add csv export.
+
+---
+
+## :sparkling_heart: Support the project
+
+I put almost everything open-source I can, and try to accommodate anyone who needs help using these projects. Obviously,
+this takes time. You can use this service for free.
+
+However, if you are using this project and are happy with it or just want to encourage me to keep creating: -
+
+- Put a star and share the project :rocket:
+
+Thank you! :heart:
+
+---
+
+## :scroll: License
+
+MIT
+
+---
+
