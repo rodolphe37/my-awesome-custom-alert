@@ -34,11 +34,6 @@ it's a reusable custom alert component!
 **You can test My Awesome Custom Alert demo** **[here](https://my-awesome-custom-alert.netlify.app/)**,
 **And the version with input for writing what you want during test** **[here](https://reusable-alert-tutorial.netlify.app/)**,
 
-
-**:heavy_check_mark: The Error modal**
-
-![alt text](demo/error.png "My AwesomeCustom Alert")
-
 ---
 ## Arguments and options!
 
