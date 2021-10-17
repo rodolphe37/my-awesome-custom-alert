@@ -88,7 +88,7 @@ const ExampleComponent = () => {
 
    // Component with Custom alert success
   const SuccessAlert = () => (
-    <CustomAlerComponent
+    <CustomAlertComponent
       success
       successMessage="yay, everything is working."
       // If you dont want button, just remove this line below.
@@ -138,7 +138,7 @@ const ExampleComponent = () => {
 
   // Component with Custom alert info
   const InfoAlert = () => (
-    <CustomAlerComponent
+    <CustomAlertComponent
       info
       infoMessage="info! be read carefully."
       // If you dont want button, remove this line below.
@@ -184,7 +184,7 @@ const ExampleComponent = () => {
 
   // Component with Custom alert warning
   const WarningAlert = () => (
-    <CustomAlerComponent
+    <CustomAlertComponent
       warning
       warningMessage="Be careful what you ask for, you might end up with this!"
       // If you dont want button, remove this line below.
@@ -229,7 +229,7 @@ const ExampleComponent = () => {
 
   // Component with Custom alert Error
   const ErrorAlert = () => (
-    <CustomAlerComponent
+    <CustomAlertComponent
       error
       errorMessage="oh no, something went wrong."
       // If you dont want button, remove this line below.
