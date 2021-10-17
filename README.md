@@ -153,6 +153,11 @@ const ExampleComponent = () => {
           <InfoAlert />
         </div>
       )}
+      <div className="button-container">
+        <button className="button-boxApp" onClick={handleClickInfo}>
+          Info Alert
+        </button>
+      </div>
     </div>
   )
 };
@@ -199,6 +204,11 @@ const ExampleComponent = () => {
           <WarningAlert />
         </div>
       )}
+      <div className="button-container">
+        <button className="button-boxApp" onClick={handleClickWarning}>
+          Warning Alert
+        </button>
+      </div>
     </div>
   )
 };
@@ -244,6 +254,11 @@ const ExampleComponent = () => {
           <ErrorAlert />
         </div>
       )}
+      <div className="button-container">
+         <button className="button-boxApp" onClick={handleClickError}>
+          Error Alert
+        </button>
+      </div>
     </div>
   )
 };
@@ -258,7 +273,7 @@ export default ExampleComponent;
 
 ---
 
-### And... voilà! you have your awesome alert component!
+### And... voilà! you have your awesome reusable custom alert component!
 
 ## :bust_in_silhouette: Author
 
