@@ -258,7 +258,7 @@ export default ExampleComponent;
 
 ---
 
-### And... voilà! you have your awesome alert component§
+### And... voilà! you have your awesome alert component!
 
 ## :bust_in_silhouette: Author
 
