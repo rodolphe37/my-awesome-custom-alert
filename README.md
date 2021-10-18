@@ -24,7 +24,7 @@ it's a reusable custom alert component!
 
 ---
 
->Desktop
+>Desktop view
 
 ![alt text](demo/desktop-demo.gif "My AwesomeCustom Alert")
 
@@ -32,7 +32,7 @@ it's a reusable custom alert component!
 
 ![alt text](demo/tablet-demo.gif "My AwesomeCustom Alert")
 
-mobile views
+mobile view
 
 ![alt text](demo/mobile-demo.gif "My AwesomeCustom Alert")
 
