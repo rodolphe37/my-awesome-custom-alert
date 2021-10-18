@@ -33,6 +33,7 @@
 }
 .withoutButton.Message .offlineMessCOntainer {
   top: 0 !important;
+  left: -4px !important;
 }
 
 .button-boxApp {
