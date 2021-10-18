@@ -22,11 +22,17 @@ it's a reusable custom alert component!
 
 #### 😉😃😄 A single component with four possibilities - success, info, warning & error, as well as the option with or without a button embedded in the modal.
 
+---
 
+>Desktop & mobile views
 
 ![alt text](demo/demo.gif "My AwesomeCustom Alert")
 
+>Desktop & mobile views
 
+![alt text](demo/tablets.gif "My AwesomeCustom Alert")
+
+---
 
 ### :computer: Online sites
 
