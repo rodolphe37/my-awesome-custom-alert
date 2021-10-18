@@ -118,7 +118,7 @@ export default ExampleComponent;
 
 **:heavy_check_mark: The Result**
 
-![alt text](demo/success.png "My AwesomeCustom Alert")
+![alt text](demo/success.gif "My AwesomeCustom Alert")
 
 ---
 
@@ -168,7 +168,7 @@ export default ExampleComponent;
 
 **:heavy_check_mark: The Result**
 
-![alt text](demo/info.png "My AwesomeCustom Alert")
+![alt text](demo/info.gif "My AwesomeCustom Alert")
 
 ---
 
@@ -219,7 +219,7 @@ export default ExampleComponent;
 
 **:heavy_check_mark: The Result**
 
-![alt text](demo/warning.png "My AwesomeCustom Alert")
+![alt text](demo/warning.gif "My AwesomeCustom Alert")
 
 ---
 
@@ -269,7 +269,7 @@ export default ExampleComponent;
 
 **:heavy_check_mark: The Result**
 
-![alt text](demo/error.png "My AwesomeCustom Alert")
+![alt text](demo/error.gif "My AwesomeCustom Alert")
 
 ---
 
