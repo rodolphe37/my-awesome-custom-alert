@@ -44,7 +44,7 @@ it's a reusable custom alert component!
 ---
 ## Arguments and options!
 
-### the Props available!
+### the Props availables!
 
 ```javascript
   success, // boolean value for appear or not the success window
