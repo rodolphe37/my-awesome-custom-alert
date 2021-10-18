@@ -307,7 +307,7 @@ export default ExampleComponent;
 
 >**You have two props:**
 >
- > - type (string with five choices - danger - warning -success - info - primary)
+ > - type (string with five choices - danger - warning - success - info - primary)
  >
  > - content (string - content message to display)
 
