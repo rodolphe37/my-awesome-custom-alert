@@ -161,7 +161,7 @@ const ExampleComponent = () => {
   return (
     <div>
       {displayInfo && (
-        <div className="swing-in-top-fwd">
+        <div className="slide-in-top">
           <InfoAlert />
         </div>
       )}
