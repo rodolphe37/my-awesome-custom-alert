@@ -64,8 +64,8 @@ mobile view
   warning, // boolean value - for appear or not the warning window
   warningMessage, // string - message warning
   info, // boolean value - for appear or not the info window
-  customStyleColor, // HEX, rgba, hsl, gradient, etc... - Background value for modal
   infoMessage, // string - message info
+  customStyleColor, // HEX, rgba, hsl, gradient, etc... - Background value for modal
   withButton, // boolean - value for appear or desappear the button window
   buttonText, // string - button content
 
