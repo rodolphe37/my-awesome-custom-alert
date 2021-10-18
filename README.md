@@ -59,7 +59,7 @@ mobile view
   warningMessage, // string message warning
   info, // boolean value for appear or not the info window
   infoMessage, // string message info
-  withButton, // boolean value for appear or desappear the button window for all types of alert (by default is true)
+  withButton, // boolean value for appear or desappear the button window for all types of alert
 
 ```
 >:heavy_check_mark: Important!

@@ -12,9 +12,9 @@ const CustomAlertComponent = ({
   error, //boolean value for appear or not the error window
   errorMessage, // string message error
   warning, // boolean value for appear or not the warning window
-  warningMessage,
-  info, // string message info
-  infoMessage, // boolean value for appear or not the info window
+  warningMessage, // string message warning
+  info, // boolean value for appear or not the info window
+  infoMessage, // string message info
   withButton, // boolean value for appear or desappear the button window
 }) => {
   const [displayAlertSuccess, setDisplayAlertSuccess] = useState(false); //boolean value for open or close success window
