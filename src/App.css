@@ -26,7 +26,7 @@
   color: darkred;
   word-break: break-word;
   padding: 7px;
-  width: 40%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,10 +92,7 @@
     margin-top: 16rem;
   }
   .withoutButton.Message {
-    left: 0;
-  }
-  .withoutButton.Message {
-    margin-bottom: -2em;
+    left: -6px;
   }
 }
 @media screen and (device-width: 1280px) {
@@ -105,9 +102,6 @@
   .appLogo h1 {
     font-size: 18px;
     margin-top: 5rem;
-  }
-  .withoutButton.Message {
-    margin-bottom: -2em;
   }
 }
 
