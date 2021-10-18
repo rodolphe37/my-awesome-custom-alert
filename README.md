@@ -57,16 +57,16 @@ mobile view
 // AND CUSTOMIZE THE MODAL BACKGROUND COLOR FOR EACH TYPE OF ALERT
 
 
-  success, // boolean value - for appear or not the success window
+  success, // boolean - for appear or not the success window
   successMessage, // string - message success
-  error, //boolean value - for appear or not the error window
+  error, //boolean - for appear or not the error window
   errorMessage, // string - message error
-  warning, // boolean value - for appear or not the warning window
+  warning, // boolean - for appear or not the warning window
   warningMessage, // string - message warning
-  info, // boolean value - for appear or not the info window
+  info, // boolean - for appear or not the info window
   infoMessage, // string - message info
   customStyleColor, // HEX, rgba, hsl, gradient, etc... - Background value for modal
-  withButton, // boolean - value for appear or desappear the button window
+  withButton, // boolean - for appear or desappear the button window
   buttonText, // string - button content
 
 ```
