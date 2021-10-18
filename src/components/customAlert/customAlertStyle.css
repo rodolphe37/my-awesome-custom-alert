@@ -650,7 +650,7 @@
 
 /* Media queries */
 
-/* Phones */
+/* Mobile Phones */
 @media screen and (max-width: 500px) {
   #alert-container {
     width: 100%;
@@ -693,12 +693,45 @@
   .emoji--wow {
     transform: scale(0.5) translate(-10em, -4em);
   }
-  .success-box .shadow {
+  #success-box .shadow {
     top: 7em;
   }
 }
+
+/* Tablets - IPAD/IPAD PRO*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #alert-container {
+    width: 60%;
+    right: 7%;
+    left: auto;
+  }
+  #info-box,
+  #warning-box,
+  #error-box {
+    width: 66% !important;
+    right: 6% !important;
+    left: auto;
+  }
+  #success-box {
+    width: 66% !important;
+  }
+}
 /* Medium screens */
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
+@media screen and (device-width: 1280px) {
+  .emoji--yay {
+    transform: scale(0.4) translate(-12em, -80px) !important;
+  }
+  .emoji--wow {
+    transform: scale(0.4) translate(-12em, -113px) !important;
+  }
+  #warning-box .shadow {
+    top: 35% !important;
+  }
+  .emoji--angry {
+    transform: scale(0.4);
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1600px) {
   #alert-container {
     max-height: 42vh;
   }

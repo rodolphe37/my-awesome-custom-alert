@@ -8,7 +8,6 @@ const SuccessComponent = ({
       <div onClick={disabledDisplaySuccess} className="dot">
         x
       </div>
-
       <div className="face">
         <div className="emoji emoji--yay">
           <div className="emoji__face">
