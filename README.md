@@ -20,7 +20,7 @@ it's a reusable custom alert component!
 
 #### :bookmark: We often need to implement modals or notification alerts to users... Why not do it simply and with a little fun?
 
-#### 😉😃😄 - A single component with four possibilities:
+#### 😉😃😄 - A single component with four alert possibilities & many other options:
 > - success,
 > - info,
 > - warning
