@@ -12,7 +12,6 @@ const InfoComponent = ({ disabledDisplayInfo, infoMessage, withButton }) => {
             <div className="emoji__mouth"></div>
           </div>
         </div>
-        <div className="shadow"></div>
       </div>
       <div className="shadow scale"></div>
       <div className={withButton ? "message" : "message messageWithoutButton"}>
