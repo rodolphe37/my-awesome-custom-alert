@@ -326,8 +326,7 @@ import OfflineMessage from "./components/bonus/offlineMessage/OfflineMessage";
     <OfflineMessage type="warning" content={`${demoOfflineMessage}`} />
     <OfflineMessage type="success" content={`${demoOnlineMessage}`} />
     <OfflineMessage type="info" content={`${demoInfoAndPrimaryMessage}`} />
-    <OfflineMessage type="primary" content={`${demoInfoAndPrimaryMessage}`}
-    />
+    <OfflineMessage type="primary" content={`${demoInfoAndPrimaryMessage}`} />
 </div>
 ...
 ```
