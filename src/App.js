@@ -131,9 +131,15 @@ function App() {
         <img src={AppPicture} alt="app logo" width="400" />
       </div>
       <div className="withoutButton Message">
-        {!withButtonOption
-          ? `When you do not display a button in the alert window, the modal closes automatically after 4 seconds.`
-          : null}
+        {/*Real life usercase here; lol */}
+        {!withButtonOption ? (
+          <OfflineMessage
+            type="warning"
+            content={
+              "When you do not display a button in the alert window, the modal closes automatically after 4 seconds."
+            }
+          />
+        ) : null}
       </div>
       <div className="App-footer">
         {/*Button section - For Demo only */}

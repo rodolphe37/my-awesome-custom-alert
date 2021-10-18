@@ -1,6 +1,10 @@
 .App {
   text-align: center;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .App-footer {
@@ -18,10 +22,17 @@
 .withoutButton.Message {
   position: fixed;
   bottom: 9em;
-  left: 29%;
+  /* left: 29%; */
   color: darkred;
   word-break: break-word;
-  right: auto;
+  padding: 7px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.withoutButton.Message .offlineMessCOntainer {
+  top: 0 !important;
 }
 
 .button-boxApp {
@@ -83,6 +94,9 @@
   .withoutButton.Message {
     left: 0;
   }
+  .withoutButton.Message {
+    margin-bottom: -2em;
+  }
 }
 @media screen and (device-width: 1280px) {
   .bonus-section {
@@ -91,6 +105,9 @@
   .appLogo h1 {
     font-size: 18px;
     margin-top: 5rem;
+  }
+  .withoutButton.Message {
+    margin-bottom: -2em;
   }
 }
 
