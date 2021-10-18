@@ -297,6 +297,8 @@ export default ExampleComponent;
 
 ## :heavy_exclamation_mark: Bonus - another simple reusable alert component
 
+![alt text](demo/simple-alert-bonus.png "My AwesomeCustom Alert")
+
 ***The procedure and code implementation is similar to the other component!***
 
 >Copy/paste the offlineMessage folder into your application...
