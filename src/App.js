@@ -83,14 +83,13 @@ function App() {
       withButton={withButtonOption ? true : false}
     />
   );
-
+  // This 3 variables are for the bonus simple alert component
   const demoOfflineMessage =
     "You are offline or there is a connection problem!";
-
   const demoOnlineMessage = "You are now back online!";
-
   const demoInfoAndPrimaryMessage =
     "You are back online, but you should check your connection!";
+
   return (
     <div className="App">
       {/*All 4 choices with boolean conditions to display & css effect */}
