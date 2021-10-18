@@ -26,7 +26,7 @@ it's a reusable custom alert component!
 > - warning
 > - & error,
 > - as well as the option with or without a button embedded in the modal (if the button is appear, you can customize the button text),
-> - make appear overlay or not with all alert individualy,
+> - make appear overlay or not for all alert individually,
 > - and you can customize the modal background color for each type of alert.
 
 ---
@@ -61,6 +61,7 @@ mobile view
 // YOU HAVE 4 POSSIBILITIES - SUCCESS, ERROR, INFO & WARNING ALERT -
 // AND THEN YOU CAN MAKE APPEAR OR NOT THE BUTTON
 // (IF THE BUTTON IS APPEAR, YOU CAN CUSTOMIZE THE BUTTON TEXT),
+// YOU CAN MAKE APPEAR OVERLAY EFFECT OR NOT FOR ALL ALERT INDIVIDUALLY
 // AND CUSTOMIZE THE MODAL BACKGROUND COLOR FOR EACH TYPE OF ALERT
 
 
