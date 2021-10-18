@@ -5,6 +5,7 @@ import OfflineMessage from "./components/bonus/offlineMessage/OfflineMessage";
 import AppPicture from "./assets/componentPicture.svg";
 
 function App() {
+  // THIS IS FOR THE DEMO of My Awesome Custom Alert
   // States for displaying success, info, warning, error & withButton option
   const [displaySuccess, setDisplaySuccess] = useState(false);
   const [displayInfo, setDisplayInfo] = useState(false);
@@ -12,7 +13,7 @@ function App() {
   const [displayError, setDisplayError] = useState(false);
   const [withButtonOption, setWithButtonOption] = useState(true);
 
-  // THIS IS FOR THE DEMO
+  // THIS IS FOR THE DEMO of My Awesome Custom Alert
   // with button or without button demo alert
   const handleClickWithButton = () => {
     setWithButtonOption((withButtonOption) => !withButtonOption);
@@ -83,7 +84,8 @@ function App() {
       withButton={withButtonOption ? true : false}
     />
   );
-  // This 3 variables are for the bonus simple alert component
+  // THIS IS FOR THE DEMO of Another simple alert component
+  // This 3 variables are for the bonus only
   const demoOfflineMessage =
     "You are offline or there is a connection problem!";
   const demoOnlineMessage = "You are now back online!";
