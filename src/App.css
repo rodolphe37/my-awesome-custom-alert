@@ -12,6 +12,7 @@
   justify-content: center;
   height: 80px;
   bottom: 3px;
+  z-index: 99;
 }
 
 .withoutButton.Message {
@@ -21,14 +22,6 @@
   color: darkred;
   word-break: break-word;
   right: auto;
-}
-@media screen and (max-width: 500px) {
-  .withoutButton.Message {
-    left: 0;
-  }
-  .appLogo h1 {
-    font-size: 18px;
-  }
 }
 
 .button-boxApp {
@@ -54,6 +47,51 @@
   flex-direction: column;
   width: 100%;
   height: 100vh;
+}
+.bonus-section {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  transform: scale(0.7);
+  z-index: 1;
+  transform: scale(0.7) translate(0, -10em);
+}
+.bonus-section .offlineMessCOntainer {
+  margin-bottom: 26px;
+  position: initial;
+}
+.App .slide-in-top,
+.App .bounce-in-top {
+  z-index: 6 !important;
+}
+
+@media screen and (max-width: 500px) {
+  sub {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    top: 0;
+    left: 0;
+  }
+  .bonus-section {
+    top: 10px;
+  }
+  .appLogo h1 {
+    font-size: 18px;
+    margin-top: 10rem;
+  }
+  .withoutButton.Message {
+    left: 0;
+  }
+}
+@media screen and (device-width: 1280px) {
+  .bonus-section {
+    top: 15px;
+  }
+  .appLogo h1 {
+    font-size: 18px;
+    margin-top: 5rem;
+  }
 }
 
 @media screen and (min-width: 1000px) {

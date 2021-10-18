@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import CustomAlertComponent from "./components/customAlert/CustomAlertComponent";
+import OfflineMessage from "./components/bonus/offlineMessage/OfflineMessage";
 import AppPicture from "./assets/componentPicture.svg";
 
 function App() {
@@ -82,6 +83,9 @@ function App() {
       withButton={withButtonOption ? true : false}
     />
   );
+
+  const demoOfflineMessage =
+    "You are offline or there is a connection problem!";
   return (
     <div className="App">
       {/*All 4 choices with boolean conditions to display & css effect */}
@@ -105,6 +109,13 @@ function App() {
           <ErrorAlert />
         </div>
       )}
+      <div className="bonus-section">
+        <h2>Bonus - another simple reusable alert component</h2>
+        <OfflineMessage type="danger" content={`${demoOfflineMessage}`} />
+        <OfflineMessage type="warning" content={`${demoOfflineMessage}`} />
+        <OfflineMessage type="info" content={`${demoOfflineMessage}`} />
+        <OfflineMessage type="primary" content={`${demoOfflineMessage}`} />
+      </div>
       <sub>Copyright - 2021 - rodolphe Augusto</sub>
       <div className="appLogo">
         <h1>⭐My Awesome Custom Alert⭐</h1>

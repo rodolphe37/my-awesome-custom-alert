@@ -108,40 +108,42 @@ const CustomAlertComponent = ({
       displayAlertError ||
       displayAlertWarning ||
       displayAlertInfo ? (
-        <div className="alert-overlay"></div>
+        <Fragment>
+          <div className="alert-overlay"></div>
+          <div className="alert-box-content ">
+            <div id="alert-container">
+              {displayAlertSuccess ? (
+                <SuccessComponent
+                  disabledDisplaySuccess={disabledDisplaySuccess}
+                  successMessage={successMessage}
+                  withButton={withButton}
+                />
+              ) : null}
+              {displayAlertError ? (
+                <ErrorComponent
+                  disabledDisplayError={disabledDisplayError}
+                  withButton={withButton}
+                  errorMessage={errorMessage}
+                />
+              ) : null}
+              {displayAlertWarning ? (
+                <WarningComponent
+                  disabledDisplayWarning={disabledDisplayWarning}
+                  warningMessage={warningMessage}
+                  withButton={withButton}
+                />
+              ) : null}
+              {displayAlertInfo ? (
+                <InfoComponent
+                  disabledDisplayInfo={disabledDisplayInfo}
+                  infoMessage={infoMessage}
+                  withButton={withButton}
+                />
+              ) : null}
+            </div>
+          </div>
+        </Fragment>
       ) : null}
-      <div className="alert-box-content ">
-        <div id="alert-container">
-          {displayAlertSuccess ? (
-            <SuccessComponent
-              disabledDisplaySuccess={disabledDisplaySuccess}
-              successMessage={successMessage}
-              withButton={withButton}
-            />
-          ) : null}
-          {displayAlertError ? (
-            <ErrorComponent
-              disabledDisplayError={disabledDisplayError}
-              withButton={withButton}
-              errorMessage={errorMessage}
-            />
-          ) : null}
-          {displayAlertWarning ? (
-            <WarningComponent
-              disabledDisplayWarning={disabledDisplayWarning}
-              warningMessage={warningMessage}
-              withButton={withButton}
-            />
-          ) : null}
-          {displayAlertInfo ? (
-            <InfoComponent
-              disabledDisplayInfo={disabledDisplayInfo}
-              infoMessage={infoMessage}
-              withButton={withButton}
-            />
-          ) : null}
-        </div>
-      </div>
     </Fragment>
   );
 };

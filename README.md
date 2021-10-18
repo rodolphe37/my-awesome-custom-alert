@@ -289,6 +289,45 @@ export default ExampleComponent;
 
 ### And... voilà! you have your awesome reusable custom alert component!
 
+
+## Bonus - another simple reusable alert component
+
+***The procedure and code implementation is similar to the other component!***
+
+>Copy/paste the offlineMessage folder into your application...
+
+### Props & implementation examples!
+
+```javascript
+...
+import OfflineMessage from "./components/bonus/offlineMessage/OfflineMessage";
+...
+
+ const demoOfflineMessage =
+    "You are offline or there is a connection problem!";
+
+<div className="bonus-section">
+  <h2>Bonus - another simple reusable alert component</h2>
+  <OfflineMessage
+    type="danger"
+    content={`${demoOfflineMessage}`}
+  />
+  <OfflineMessage
+    type="warning"
+    content={`${demoOfflineMessage}`}
+  />
+  <OfflineMessage
+    type="info"
+    content={`${demoOfflineMessage}`}
+  />
+  <OfflineMessage
+    type="primary"
+    content={`${demoOfflineMessage}`}
+  />
+</div>
+...
+```
+
 ## :bust_in_silhouette: Author
 
 - Thought, designed and developed with :purple_heart: by Rodolphe Augusto
