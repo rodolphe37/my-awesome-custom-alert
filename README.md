@@ -316,8 +316,9 @@ export default ExampleComponent;
 import OfflineMessage from "./components/bonus/offlineMessage/OfflineMessage";
 ...
 
- const demoOfflineMessage =
-    "You are offline or there is a connection problem!";
+  const demoOfflineMessage = "You are offline or there is a connection problem!";
+  const demoOnlineMessage = "You are now back online!";
+  const demoInfoAndPrimaryMessage = "You are back online, but you should check your connection!";
 
 <div className="bonus-section">
   <h2>Bonus - another simple reusable alert component</h2>
