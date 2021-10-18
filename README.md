@@ -24,13 +24,17 @@ it's a reusable custom alert component!
 
 ---
 
->Desktop & mobile views
+>Desktop
 
-![alt text](demo/demo.gif "My AwesomeCustom Alert")
+![alt text](demo/desktop-demo.gif "My AwesomeCustom Alert")
 
 >Tablets view
 
-![alt text](demo/tablets.gif "My AwesomeCustom Alert")
+![alt text](demo/tablet-demo.gif "My AwesomeCustom Alert")
+
+mobile views
+
+![alt text](demo/mobile-demo.gif "My AwesomeCustom Alert")
 
 ---
 
