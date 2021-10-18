@@ -305,6 +305,10 @@ export default ExampleComponent;
 
 ### Props & implementation examples!
 
+>You have two props:
+ >type (string with four choices - danger - warning - info - primary)
+ >content (string - content message to display)
+
 ```javascript
 ...
 import OfflineMessage from "./components/bonus/offlineMessage/OfflineMessage";
