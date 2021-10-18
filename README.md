@@ -293,8 +293,9 @@ export default ExampleComponent;
 
 ### And... voilà! you have your awesome reusable custom alert component!
 
+---
 
-## Bonus - another simple reusable alert component
+## :heavy_exclamation_mark: Bonus - another simple reusable alert component
 
 ***The procedure and code implementation is similar to the other component!***
 
