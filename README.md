@@ -20,7 +20,15 @@ it's a reusable custom alert component!
 
 #### :bookmark: We often need to implement modals or notification alerts to users... Why not do it simply and with a little fun?
 
-#### 😉😃😄 A single component with four possibilities - success, info, warning & error, as well as the option with or without a button embedded in the modal (if the button is appear, you can customize the button text),make appear overlay or not with all alert individualy, and you can customize the modal background color for each type of alert.
+#### 😉😃😄 - A single component with four possibilities:
+- success,
+- info,
+- warning
+- & error,
+
+- as well as the option with or without a button embedded in the modal (if the button is appear, you can customize the button text),
+- make appear overlay or not with all alert individualy,
+- and you can customize the modal background color for each type of alert.
 
 ---
 
