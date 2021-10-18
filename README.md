@@ -307,7 +307,7 @@ export default ExampleComponent;
 
 >**You have two props:**
 >
- > - type (string with four choices - danger - warning - info - primary)
+ > - type (string with five choices - danger - warning -success - info - primary)
  >
  > - content (string - content message to display)
 
@@ -321,22 +321,12 @@ import OfflineMessage from "./components/bonus/offlineMessage/OfflineMessage";
 
 <div className="bonus-section">
   <h2>Bonus - another simple reusable alert component</h2>
-  <OfflineMessage
-    type="danger"
-    content={`${demoOfflineMessage}`}
-  />
-  <OfflineMessage
-    type="warning"
-    content={`${demoOfflineMessage}`}
-  />
-  <OfflineMessage
-    type="info"
-    content={`${demoOfflineMessage}`}
-  />
-  <OfflineMessage
-    type="primary"
-    content={`${demoOfflineMessage}`}
-  />
+    <OfflineMessage type="danger" content={`${demoOfflineMessage}`} />
+    <OfflineMessage type="warning" content={`${demoOfflineMessage}`} />
+    <OfflineMessage type="success" content={`${demoOnlineMessage}`} />
+    <OfflineMessage type="info" content={`${demoInfoAndPrimaryMessage}`} />
+    <OfflineMessage type="primary" content={`${demoInfoAndPrimaryMessage}`}
+    />
 </div>
 ...
 ```

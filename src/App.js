@@ -86,6 +86,11 @@ function App() {
 
   const demoOfflineMessage =
     "You are offline or there is a connection problem!";
+
+  const demoOnlineMessage = "You are now back online!";
+
+  const demoInfoAndPrimaryMessage =
+    "You are back online, but you should check your connection!";
   return (
     <div className="App">
       {/*All 4 choices with boolean conditions to display & css effect */}
@@ -113,8 +118,12 @@ function App() {
         <h2>Bonus - another simple reusable alert component</h2>
         <OfflineMessage type="danger" content={`${demoOfflineMessage}`} />
         <OfflineMessage type="warning" content={`${demoOfflineMessage}`} />
-        <OfflineMessage type="info" content={`${demoOfflineMessage}`} />
-        <OfflineMessage type="primary" content={`${demoOfflineMessage}`} />
+        <OfflineMessage type="success" content={`${demoOnlineMessage}`} />
+        <OfflineMessage type="info" content={`${demoInfoAndPrimaryMessage}`} />
+        <OfflineMessage
+          type="primary"
+          content={`${demoInfoAndPrimaryMessage}`}
+        />
       </div>
       <sub>Copyright - 2021 - rodolphe Augusto</sub>
       <div className="appLogo">
