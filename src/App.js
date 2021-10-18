@@ -131,7 +131,7 @@ function App() {
         <img src={AppPicture} alt="app logo" width="400" />
       </div>
       <div className="withoutButton Message">
-        {/*Real life usercase here; lol */}
+        {/*Real life usercase to OfflineMessageComponent here; lol */}
         {!withButtonOption ? (
           <OfflineMessage
             type="warning"
