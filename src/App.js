@@ -3,6 +3,7 @@ import "./App.css";
 import CustomAlertComponent from "./components/customAlert/CustomAlertComponent";
 import OfflineMessage from "./components/bonus/offlineMessage/OfflineMessage";
 import AppPicture from "./assets/componentPicture.svg";
+import FloatingButton from "./components/githubFloatingButton/FloatingButton";
 
 function App() {
   // THIS IS FOR THE DEMO of My Awesome Custom Alert
@@ -159,6 +160,7 @@ function App() {
         <button className="button-boxApp" onClick={handleClickWithButton}>
           {!withButtonOption ? `alert with button?` : `alert without button?`}
         </button>
+        <FloatingButton />
       </div>
     </div>
   );
