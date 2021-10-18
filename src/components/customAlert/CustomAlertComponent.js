@@ -21,6 +21,7 @@ const CustomAlertComponent = ({
   infoMessage, // string - message info
   withButton, // boolean - value for appear or desappear the button window
   buttonText, // string - button content
+  overlay, // boolean - if you want overlay effect or not
 }) => {
   const [displayAlertSuccess, setDisplayAlertSuccess] = useState(false); //boolean value for open or close success window
   const [displayAlertError, setDisplayAlertError] = useState(false); //boolean value for open or close error window
@@ -114,7 +115,8 @@ const CustomAlertComponent = ({
       displayAlertWarning ||
       displayAlertInfo ? (
         <Fragment>
-          <div className="alert-overlay"></div>
+          {overlay ? <div className="alert-overlay"></div> : null}
+
           <div className="alert-box-content ">
             <div id="alert-container">
               {displayAlertSuccess ? (

@@ -20,7 +20,7 @@ it's a reusable custom alert component!
 
 #### :bookmark: We often need to implement modals or notification alerts to users... Why not do it simply and with a little fun?
 
-#### 😉😃😄 A single component with four possibilities - success, info, warning & error, as well as the option with or without a button embedded in the modal (if the button is appear, you can customize the button text), and you can customize the modal background color for each type of alert.
+#### 😉😃😄 A single component with four possibilities - success, info, warning & error, as well as the option with or without a button embedded in the modal (if the button is appear, you can customize the button text),make appear overlay or not with all alert individualy, and you can customize the modal background color for each type of alert.
 
 ---
 
@@ -68,6 +68,7 @@ mobile view
   customStyleColor, // HEX, rgba, hsl, gradient, etc... - Background value for modal
   withButton, // boolean - for appear or desappear the button window
   buttonText, // string - button content
+  overlay, // boolean - if you want overlay effect or not
 
 ```
 >:heavy_check_mark: Important!
@@ -113,6 +114,8 @@ const ExampleComponent = () => {
        // If you dont want custom background color, just remove this line below, the default color will be chosed.
       customStyleColor="#ef8f9e" // Background value for the modal (ex: HEX, rgba, hsl, gradient, etc...)
       successMessage="yay, everything is working."
+      // if you don't want overlay effect remove this line below
+      overlay
       // If you dont want button, just remove this two lines below.
       withButton
       buttonText="Great, it's cool!"
@@ -166,6 +169,8 @@ const ExampleComponent = () => {
       // If you dont want custom background color, just remove this line below, the default gradient color will be choosed.
       customStyleColor="rgba(255, 255,255, 0.7)" // Background value for the modal (ex: HEX, rgba, hsl, gradient, etc...)
       infoMessage="info! be read carefully."
+      // if you don't want overlay effect remove this line below
+      overlay
       // If you dont want button, remove this line below.
       withButton
       // If you dont write buttonText props, the default text is choosed.
@@ -220,6 +225,8 @@ const ExampleComponent = () => {
       // If you dont want custom background color, just remove this line below, the default color will be chosed.
       customStyleColor="hsl(351, 75%, 75%)" // Background value for the modal (ex: HEX, rgba, hsl, gradient, etc...)
       warningMessage="Be careful what you ask for, you might end up with this!"
+      // if you don't want overlay effect remove this line below
+      overlay
       // If you dont want button, remove this line below.
       withButton
       // If you dont write buttonText props, the default text is choosed.
@@ -273,6 +280,8 @@ const ExampleComponent = () => {
       // If you dont want custom background color, just remove this line below, the default color will be chosed.
       customStyleColor="red" // Background value for the modal (ex: HEX, rgba, hsl, gradient, etc...)
       errorMessage="oh no, something went wrong."
+      // if you don't want overlay effect remove this line below
+      overlay
       // If you dont want button, just remove this two lines below.
       withButton
       buttonText="No worry, try again!"

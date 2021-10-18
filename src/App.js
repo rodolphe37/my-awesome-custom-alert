@@ -54,6 +54,8 @@ function App() {
     <CustomAlertComponent
       success
       successMessage="yay, everything is working."
+      // if you don't want overlay effect remove this line below
+      overlay
       // If you dont want button, remove this line below - if you want a button just type withButton and that's all.
       withButton={withButtonOption ? true : false}
       buttonText="Great, its cool!"
@@ -64,6 +66,8 @@ function App() {
     <CustomAlertComponent
       info
       infoMessage="info! be read carefully."
+      // if you don't want overlay effect remove this line below
+      overlay
       // If you dont want button, remove this line below - if you want a button just type withButton and that's all.
       withButton={withButtonOption ? true : false}
     />
@@ -73,6 +77,8 @@ function App() {
     <CustomAlertComponent
       warning
       warningMessage="Be careful what you ask for, you might end up with this!"
+      // if you don't want overlay effect remove this line below
+      overlay
       // If you dont want button, remove this line below - if you want a button just type withButton and that's all.
       withButton={withButtonOption ? true : false}
     />
@@ -82,6 +88,8 @@ function App() {
     <CustomAlertComponent
       error
       errorMessage="oh no, something went wrong."
+      // if you don't want overlay effect remove this line below
+      overlay
       // If you dont want button, remove this line below - if you want a button just type withButton and that's all.
       withButton={withButtonOption ? true : false}
       buttonText="No worry, try again!"
