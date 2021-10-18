@@ -305,7 +305,7 @@ export default ExampleComponent;
 
 ### Props & implementation examples!
 
->You have two props:
+>**You have two props:**
 >
  > -type (string with four choices - danger - warning - info - primary)
  >
