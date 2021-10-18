@@ -56,6 +56,7 @@ function App() {
       successMessage="yay, everything is working."
       // If you dont want button, remove this line below - if you want a button just type withButton and that's all.
       withButton={withButtonOption ? true : false}
+      buttonText="Great, its cool!"
     />
   );
   // Component with Custom alert info
@@ -83,6 +84,7 @@ function App() {
       errorMessage="oh no, something went wrong."
       // If you dont want button, remove this line below - if you want a button just type withButton and that's all.
       withButton={withButtonOption ? true : false}
+      buttonText="No worry, try again!"
     />
   );
   // THIS IS FOR THE DEMO of Another simple alert component

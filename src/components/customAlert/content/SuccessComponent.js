@@ -2,9 +2,18 @@ const SuccessComponent = ({
   disabledDisplaySuccess,
   successMessage,
   withButton,
+  buttonText,
+  customStyleColor,
 }) => {
   return (
-    <div id="success-box">
+    <div
+      style={{
+        background: customStyleColor
+          ? customStyleColor
+          : "linear-gradient(to bottom right, #b0db7d 40%, #99dbb4 100%)",
+      }}
+      id="success-box"
+    >
       <div onClick={disabledDisplaySuccess} className="dot">
         x
       </div>
@@ -23,7 +32,7 @@ const SuccessComponent = ({
       </div>
       {withButton ? (
         <button onClick={disabledDisplaySuccess} className="button-box">
-          <h1 className="green-text">continue</h1>
+          <h1 className="green-text">{buttonText ? buttonText : `continue`}</h1>
         </button>
       ) : null}
     </div>

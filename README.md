@@ -51,15 +51,23 @@ mobile view
 ### the Props availables!
 
 ```javascript
-  success, // boolean value for appear or not the success window
-  successMessage, // string message success
-  error, //boolean value for appear or not the error window
-  errorMessage, // string message error
-  warning, // boolean value for appear or not the warning window
-  warningMessage, // string message warning
-  info, // boolean value for appear or not the info window
-  infoMessage, // string message info
-  withButton, // boolean value for appear or desappear the button window for all types of alert
+// YOU HAVE 4 POSSIBILITIES - SUCCESS, ERROR, INFO & WARNING ALERT -
+// AND THEN YOU CAN MAKE APPEAR OR NOT THE BUTTON
+// (IF THE BUTTON IS APPEAR, YOU CAN CUSTOMIZE THE BUTTON TEXT),
+// AND CUSTOMIZE THE MODAL BACKGROUND COLOR FOR EACH TYPE OF ALERT
+
+
+  success, // boolean value - for appear or not the success window
+  successMessage, // string - message success
+  error, //boolean value - for appear or not the error window
+  errorMessage, // string - message error
+  warning, // boolean value - for appear or not the warning window
+  warningMessage, // string - message warning
+  info, // boolean value - for appear or not the info window
+  customStyleColor, // HEX, rgba, hsl, gradient, etc... - Background value for modal
+  infoMessage, // string - message info
+  withButton, // boolean - value for appear or desappear the button window
+  buttonText, // string - button content
 
 ```
 >:heavy_check_mark: Important!
@@ -102,9 +110,12 @@ const ExampleComponent = () => {
   const SuccessAlert = () => (
     <CustomAlertComponent
       success
+       // If you dont want custom background color, just remove this line below, the default color will be chosed.
+      customStyleColor="#ef8f9e" // Background value for the modal (ex: HEX, rgba, hsl, gradient, etc...)
       successMessage="yay, everything is working."
-      // If you dont want button, just remove this line below.
+      // If you dont want button, just remove this two lines below.
       withButton
+      buttonText="Great, it's cool!"
     />
   );
 
@@ -152,9 +163,12 @@ const ExampleComponent = () => {
   const InfoAlert = () => (
     <CustomAlertComponent
       info
+      // If you dont want custom background color, just remove this line below, the default gradient color will be choosed.
+      customStyleColor="rgba(255, 255,255, 0.7)" // Background value for the modal (ex: HEX, rgba, hsl, gradient, etc...)
       infoMessage="info! be read carefully."
       // If you dont want button, remove this line below.
       withButton
+      // If you dont write buttonText props, the default text is choosed.
     />
   );
 
@@ -203,9 +217,12 @@ const ExampleComponent = () => {
   const WarningAlert = () => (
     <CustomAlertComponent
       warning
+      // If you dont want custom background color, just remove this line below, the default color will be chosed.
+      customStyleColor="hsl(351, 75%, 75%)" // Background value for the modal (ex: HEX, rgba, hsl, gradient, etc...)
       warningMessage="Be careful what you ask for, you might end up with this!"
       // If you dont want button, remove this line below.
       withButton
+      // If you dont write buttonText props, the default text is choosed.
     />
   );
 
@@ -253,9 +270,12 @@ const ExampleComponent = () => {
   const ErrorAlert = () => (
     <CustomAlertComponent
       error
+      // If you dont want custom background color, just remove this line below, the default color will be chosed.
+      customStyleColor="red" // Background value for the modal (ex: HEX, rgba, hsl, gradient, etc...)
       errorMessage="oh no, something went wrong."
-      // If you dont want button, remove this line below.
+      // If you dont want button, just remove this two lines below.
       withButton
+      buttonText="No worry, try again!"
     />
   );
 

@@ -5,17 +5,22 @@ import ErrorComponent from "./content/ErrorComponent";
 import WarningComponent from "./content/WarningComponent";
 import InfoComponent from "./content/InfoComponent";
 
-// YOU HAVE 4 POSSIBILITIES - SUCCESS, ERROR, INFO & WARNING ALERT - AND THEN YOU CAN MAKE APPEAR OR NOT THE BUTTON
+// YOU HAVE 4 POSSIBILITIES - SUCCESS, ERROR, INFO & WARNING ALERT -
+// AND THEN YOU CAN MAKE APPEAR OR NOT THE BUTTON
+// (IF THE BUTTON IS APPEAR, YOU CAN CUSTOMIZE THE BUTTON TEXT),
+// AND CUSTOMIZE THE MODAL BACKGROUND COLOR FOR EACH TYPE OF ALERT
 const CustomAlertComponent = ({
-  success, // boolean value for appear or not the success window
-  successMessage, // string message success
-  error, //boolean value for appear or not the error window
-  errorMessage, // string message error
-  warning, // boolean value for appear or not the warning window
-  warningMessage, // string message warning
-  info, // boolean value for appear or not the info window
-  infoMessage, // string message info
-  withButton, // boolean value for appear or desappear the button window
+  success, // boolean value - for appear or not the success window
+  successMessage, // string - message success
+  error, //boolean value - for appear or not the error window
+  errorMessage, // string - message error
+  warning, // boolean value - for appear or not the warning window
+  warningMessage, // string - message warning
+  info, // boolean value - for appear or not the info window
+  customStyleColor, // HEX, rgba, hsl, gradient, etc... - Background value for modal
+  infoMessage, // string - message info
+  withButton, // boolean - value for appear or desappear the button window
+  buttonText, // string - button content
 }) => {
   const [displayAlertSuccess, setDisplayAlertSuccess] = useState(false); //boolean value for open or close success window
   const [displayAlertError, setDisplayAlertError] = useState(false); //boolean value for open or close error window
@@ -115,29 +120,37 @@ const CustomAlertComponent = ({
               {displayAlertSuccess ? (
                 <SuccessComponent
                   disabledDisplaySuccess={disabledDisplaySuccess}
+                  customStyleColor={customStyleColor}
                   successMessage={successMessage}
                   withButton={withButton}
+                  buttonText={buttonText}
                 />
               ) : null}
               {displayAlertError ? (
                 <ErrorComponent
                   disabledDisplayError={disabledDisplayError}
+                  customStyleColor={customStyleColor}
                   withButton={withButton}
+                  buttonText={buttonText}
                   errorMessage={errorMessage}
                 />
               ) : null}
               {displayAlertWarning ? (
                 <WarningComponent
                   disabledDisplayWarning={disabledDisplayWarning}
+                  customStyleColor={customStyleColor}
                   warningMessage={warningMessage}
                   withButton={withButton}
+                  buttonText={buttonText}
                 />
               ) : null}
               {displayAlertInfo ? (
                 <InfoComponent
                   disabledDisplayInfo={disabledDisplayInfo}
+                  customStyleColor={customStyleColor}
                   infoMessage={infoMessage}
                   withButton={withButton}
+                  buttonText={buttonText}
                 />
               ) : null}
             </div>

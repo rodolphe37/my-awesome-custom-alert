@@ -1,6 +1,19 @@
-const InfoComponent = ({ disabledDisplayInfo, infoMessage, withButton }) => {
+const InfoComponent = ({
+  customStyleColor,
+  disabledDisplayInfo,
+  infoMessage,
+  withButton,
+  buttonText,
+}) => {
   return (
-    <div id="info-box">
+    <div
+      style={{
+        background: customStyleColor
+          ? customStyleColor
+          : "linear-gradient(to bottom left, #69b1ea 40%, #00bcd4 100%)",
+      }}
+      id="info-box"
+    >
       <div onClick={disabledDisplayInfo} className="dot">
         x
       </div>
@@ -20,7 +33,7 @@ const InfoComponent = ({ disabledDisplayInfo, infoMessage, withButton }) => {
       </div>
       {withButton ? (
         <button onClick={disabledDisplayInfo} className="button-box">
-          <h1 className="blue-text">continue</h1>
+          <h1 className="blue-text">{buttonText ? buttonText : `continue`}</h1>
         </button>
       ) : null}
     </div>

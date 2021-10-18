@@ -2,9 +2,18 @@ const WarningComponent = ({
   disabledDisplayWarning,
   warningMessage,
   withButton,
+  buttonText,
+  customStyleColor,
 }) => {
   return (
-    <div id="warning-box">
+    <div
+      style={{
+        background: customStyleColor
+          ? customStyleColor
+          : "linear-gradient(to bottom left, #f0e05a 40%, #dcb299 100%)",
+      }}
+      id="warning-box"
+    >
       <div onClick={disabledDisplayWarning} className="dot">
         x
       </div>
@@ -862,7 +871,7 @@ L78.64,122.741z"
       </div>
       {withButton ? (
         <button onClick={disabledDisplayWarning} className="button-box">
-          <h1 className="red-text">continue</h1>
+          <h1 className="red-text">{buttonText ? buttonText : `continue`}</h1>
         </button>
       ) : null}
     </div>

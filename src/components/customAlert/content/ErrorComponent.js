@@ -1,6 +1,19 @@
-const ErrorComponent = ({ disabledDisplayError, withButton, errorMessage }) => {
+const ErrorComponent = ({
+  disabledDisplayError,
+  withButton,
+  errorMessage,
+  buttonText,
+  customStyleColor,
+}) => {
   return (
-    <div id="error-box">
+    <div
+      style={{
+        background: customStyleColor
+          ? customStyleColor
+          : "linear-gradient(to bottom left, #ef8d9c 40%, #ffc39e 100%)",
+      }}
+      id="error-box"
+    >
       <div onClick={disabledDisplayError} className="dot">
         x
       </div>
@@ -21,7 +34,7 @@ const ErrorComponent = ({ disabledDisplayError, withButton, errorMessage }) => {
       </div>
       {withButton ? (
         <button onClick={disabledDisplayError} className="button-box">
-          <h1 className="red-text">try again</h1>
+          <h1 className="red-text">{buttonText ? buttonText : `try again`}</h1>
         </button>
       ) : null}
     </div>
