@@ -742,10 +742,14 @@
 
 /* big screens */
 @media screen and (min-width: 1600px) {
+  #alert-container {
+    height: 50vh !important;
+  }
   #covid-19 {
     scale: 1.1;
   }
-  #warning-box .shadow {
+  #warning-box .shadow,
+  #info-box .shadow {
     top: 39% !important;
   }
 }
