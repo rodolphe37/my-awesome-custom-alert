@@ -307,9 +307,9 @@ export default ExampleComponent;
 
 >**You have two props:**
 >
- > -type (string with four choices - danger - warning - info - primary)
+ > - type (string with four choices - danger - warning - info - primary)
  >
- > -content (string - content message to display)
+ > - content (string - content message to display)
 
 ```javascript
 ...
