@@ -71,8 +71,8 @@ mobile view
   infoMessage, // STRING - message info
   // GLOBAL MODAL STYLES PROPS
   overlay, // BOOLEAN - if you want overlay effect or not
-  little, // predefined values - the default size is divided by 2
-  medium, // predefined values - the default size is divided by 1/3
+  little, // predefined values - the default size of the alert is divided by 2
+  medium, // predefined values - the default size of the alert is divided by 1/3
   autoClose, // NUMBER - time in ms for auto closes alert when you don't have button
   customStyleColor, // HEX, rgba, hsl, gradient, etc... - Background value for modal
   titleText, // STRING - title for each alert
