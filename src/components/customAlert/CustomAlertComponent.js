@@ -88,7 +88,6 @@ const CustomAlertComponent = ({
           }, ValueTimeOut);
         }
         break;
-
       default:
         break;
     }
