@@ -11,6 +11,7 @@ const ErrorComponent = ({
   customStyleColor,
   little,
   medium,
+  alertImg,
 }) => {
   return (
     <div
@@ -27,13 +28,26 @@ const ErrorComponent = ({
       </div>
 
       <div className="face2">
-        <div className="emoji emoji--angry">
-          <div className="emoji__face">
-            <div className="emoji__eyebrows" />
-            <div className="emoji__eyes" />
-            <div className="emoji__mouth" />
+        {alertImg ? (
+          <img
+            style={{
+              width: "8rem",
+              height: "8rem",
+              transform: "scale(0.8)",
+            }}
+            src={alertImg}
+            alt="alert-img"
+            className="emoji emoji--angry"
+          />
+        ) : (
+          <div className="emoji emoji--angry">
+            <div className="emoji__face">
+              <div className="emoji__eyebrows" />
+              <div className="emoji__eyes" />
+              <div className="emoji__mouth" />
+            </div>
           </div>
-        </div>
+        )}
       </div>
       <div className="shadow move" />
       <div className={withButton ? "message" : "message messageWithoutButton"}>

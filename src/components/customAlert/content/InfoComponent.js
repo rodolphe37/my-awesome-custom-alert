@@ -11,6 +11,7 @@ const InfoComponent = ({
   buttonBackground,
   little,
   medium,
+  alertImg,
 }) => {
   return (
     <div
@@ -26,15 +27,29 @@ const InfoComponent = ({
         x
       </div>
       <div className="face4">
-        <div className="emoji emoji--wow">
-          <div className="emoji__face">
-            <div className="emoji__eyebrows" />
-            <div className="emoji__eyes" />
-            <div className="emoji__mouth" />
+        {alertImg ? (
+          <img
+            src={alertImg}
+            alt="alert-img"
+            style={{
+              width: "5em",
+              height: "5em",
+              transform: "translate(-8.5em, 0px)",
+              animation: "bounce 1s ease-in infinite",
+            }}
+            className="emoji emoji--wow"
+          />
+        ) : (
+          <div className="emoji emoji--wow">
+            <div className="emoji__face">
+              <div className="emoji__eyebrows" />
+              <div className="emoji__eyes" />
+              <div className="emoji__mouth" />
+            </div>
           </div>
-        </div>
+        )}
       </div>
-      <div className="shadow scale" />
+      {!alertImg ? <div className="shadow scale" /> : null}
       <div className={withButton ? "message" : "message messageWithoutButton"}>
         <h1
           className="alert-text"

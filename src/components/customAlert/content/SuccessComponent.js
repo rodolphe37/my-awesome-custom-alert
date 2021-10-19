@@ -11,6 +11,7 @@ const SuccessComponent = ({
   customStyleColor,
   little,
   medium,
+  alertImg,
 }) => {
   return (
     <div
@@ -26,14 +27,27 @@ const SuccessComponent = ({
         x
       </div>
       <div className="face">
-        <div className="emoji emoji--yay">
-          <div className="emoji__face">
-            <div className="emoji__eyebrows" />
-            <div className="emoji__mouth" />
+        {alertImg ? (
+          <img
+            src={alertImg}
+            style={{
+              width: "12em",
+              height: "12em",
+              transform: "translate(-7em, -3rem) scale(0.5)",
+            }}
+            alt="alert-img"
+            className="emoji emoji--yay"
+          />
+        ) : (
+          <div className="emoji emoji--yay">
+            <div className="emoji__face">
+              <div className="emoji__eyebrows" />
+              <div className="emoji__mouth" />
+            </div>
           </div>
-        </div>
+        )}
       </div>
-      <div className="shadow scale" />
+      {!alertImg ? <div className="shadow scale" /> : null}
       <div className={withButton ? "message" : "message messageWithoutButton"}>
         <h1
           className="alert-text"

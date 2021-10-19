@@ -34,6 +34,7 @@ const CustomAlertComponent = ({
   buttonText, // STRING - button content
   colorTextButton, // HEX, rgba, hsl, gradient, etc... - color value for button text
   buttonBackground, // HEX, rgba, hsl, gradient, etc... - Background color value for button
+  alertImg, // IMAGE (svg, png, jpg, emoji, icon...)
 }) => {
   const [displayAlertSuccess, setDisplayAlertSuccess] = useState(false); //boolean value for open or close success window
   const [displayAlertError, setDisplayAlertError] = useState(false); //boolean value for open or close error window
@@ -141,6 +142,7 @@ const CustomAlertComponent = ({
                 <SuccessComponent
                   disabledDisplaySuccess={disabledDisplaySuccess}
                   customStyleColor={customStyleColor}
+                  alertImg={alertImg}
                   little={little}
                   medium={medium}
                   titleText={titleText}
@@ -157,6 +159,7 @@ const CustomAlertComponent = ({
                 <ErrorComponent
                   disabledDisplayError={disabledDisplayError}
                   customStyleColor={customStyleColor}
+                  alertImg={alertImg}
                   little={little}
                   medium={medium}
                   titleText={titleText}
@@ -173,6 +176,7 @@ const CustomAlertComponent = ({
                 <WarningComponent
                   disabledDisplayWarning={disabledDisplayWarning}
                   customStyleColor={customStyleColor}
+                  alertImg={alertImg}
                   little={little}
                   medium={medium}
                   titleText={titleText}
@@ -189,6 +193,7 @@ const CustomAlertComponent = ({
                 <InfoComponent
                   disabledDisplayInfo={disabledDisplayInfo}
                   customStyleColor={customStyleColor}
+                  alertImg={alertImg}
                   little={little}
                   medium={medium}
                   titleText={titleText}

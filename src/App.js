@@ -4,6 +4,7 @@ import CustomAlertComponent from "./components/customAlert/CustomAlertComponent"
 import OfflineMessage from "./components/bonus/offlineMessage/OfflineMessage";
 import AppPicture from "./assets/componentPicture.svg";
 import FloatingButton from "./components/githubFloatingButton/FloatingButton";
+import Me from "./assets/perso.png";
 
 function App() {
   // THIS IS FOR THE DEMO of My Awesome Custom Alert
@@ -13,11 +14,15 @@ function App() {
   const [displayWarning, setDisplayWarning] = useState(false);
   const [displayError, setDisplayError] = useState(false);
   const [withButtonOption, setWithButtonOption] = useState(true);
+  const [withCustomPicture, setWithCustomPicture] = useState(false);
 
   // THIS IS FOR THE DEMO of My Awesome Custom Alert
   // with button or without button demo alert
   const handleClickWithButton = () => {
     setWithButtonOption((withButtonOption) => !withButtonOption);
+  };
+  const handleClickWithCustomPicture = () => {
+    setWithCustomPicture((withCustomPicture) => !withCustomPicture);
   };
 
   // This function display the success alert
@@ -54,6 +59,7 @@ function App() {
     <CustomAlertComponent
       success
       successMessage="yay, everything is working."
+      alertImg={withCustomPicture ? Me : null}
       // If you dont want button, remove this line below - if you want a button just type withButton and that's all.
       withButton={withButtonOption ? true : false}
       buttonText="Great, its cool!"
@@ -64,6 +70,8 @@ function App() {
     <CustomAlertComponent
       info
       infoMessage="info! be read carefully."
+      alertImg={withCustomPicture ? Me : null}
+      little
       // if you don't want overlay effect remove this line below
       overlay
       // If you dont want button, remove this line below - if you want a button just type withButton and that's all.
@@ -75,6 +83,8 @@ function App() {
     <CustomAlertComponent
       warning
       warningMessage="Be careful what you ask for, you might end up with this!"
+      alertImg={withCustomPicture ? Me : null}
+      medium
       // If you dont want button, remove this line below - if you want a button just type withButton and that's all.
       withButton={withButtonOption ? true : false}
     />
@@ -84,6 +94,8 @@ function App() {
     <CustomAlertComponent
       error
       errorMessage="oh no, something went wrong."
+      alertImg={withCustomPicture ? Me : null}
+      medium
       // if you don't want overlay effect remove this line below
       overlay
       // If you dont want button, remove this line below - if you want a button just type withButton and that's all.
@@ -122,6 +134,13 @@ function App() {
           <ErrorAlert />
         </div>
       )}
+      <button
+        className="button-boxApp"
+        style={{ background: "purple", color: "#fff", fontWeight: "bold" }}
+        onClick={handleClickWithCustomPicture}
+      >
+        {!withCustomPicture ? `With custom Image?` : `With default emojis`}
+      </button>
       <div className="bonus-section">
         <h2>Bonus - another simple reusable alert component</h2>
         <OfflineMessage type="danger" content={`${demoOfflineMessage}`} />
