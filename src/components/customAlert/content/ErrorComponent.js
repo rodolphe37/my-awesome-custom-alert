@@ -9,6 +9,8 @@ const ErrorComponent = ({
   colorTextButton,
   buttonBackground,
   customStyleColor,
+  little,
+  medium,
 }) => {
   return (
     <div
@@ -16,6 +18,7 @@ const ErrorComponent = ({
         background: customStyleColor
           ? customStyleColor
           : "linear-gradient(to bottom left, #ef8d9c 40%, #ffc39e 100%)",
+        transform: little ? "scale(0.5)" : medium ? "scale(0.75)" : "none",
       }}
       id="error-box"
     >

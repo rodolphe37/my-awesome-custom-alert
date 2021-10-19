@@ -9,6 +9,8 @@ const WarningComponent = ({
   colorTextButton,
   buttonBackground,
   customStyleColor,
+  little,
+  medium,
 }) => {
   return (
     <div
@@ -16,6 +18,7 @@ const WarningComponent = ({
         background: customStyleColor
           ? customStyleColor
           : "linear-gradient(to bottom left, #f0e05a 40%, #dcb299 100%)",
+        transform: little ? "scale(0.5)" : medium ? "scale(0.75)" : "none",
       }}
       id="warning-box"
     >

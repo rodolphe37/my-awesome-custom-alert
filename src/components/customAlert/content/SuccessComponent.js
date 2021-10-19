@@ -9,6 +9,8 @@ const SuccessComponent = ({
   colorTextButton,
   buttonBackground,
   customStyleColor,
+  little,
+  medium,
 }) => {
   return (
     <div
@@ -16,6 +18,7 @@ const SuccessComponent = ({
         background: customStyleColor
           ? customStyleColor
           : "linear-gradient(to bottom right, #b0db7d 40%, #99dbb4 100%)",
+        transform: little ? "scale(0.5)" : medium ? "scale(0.75)" : "none",
       }}
       id="success-box"
     >
