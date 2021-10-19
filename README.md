@@ -337,41 +337,42 @@ export default ExampleComponent;
 
 ---
 
-## :heavy_exclamation_mark: Bonus - another simple reusable alert component
-
-![alt text](demo/simple-alert-bonus.png "My AwesomeCustom Alert")
-
-***The procedure and code implementation is similar to the other component!***
-
+>## :heavy_exclamation_mark: Bonus - another simple reusable alert component
+>
+>![alt text](demo/simple-alert-bonus.png "My AwesomeCustom Alert")
+>
+>***The procedure and code implementation is similar to the other component!***
+>
 >Copy/paste the offlineMessage folder into your application...
-
-### Props & implementation examples!
-
+>
+>### Props & implementation examples!
+>
 >**You have two props:**
 >
  > - type (string with five choices - danger - warning - success - info - primary)
  >
  > - content (string - content message to display)
-
-```javascript
-...
-import OfflineMessage from "./components/bonus/offlineMessage/OfflineMessage";
-...
-
-  const demoOfflineMessage = "You are offline or there is a connection problem!";
-  const demoOnlineMessage = "You are now back online!";
-  const demoInfoAndPrimaryMessage = "You are back online, but you should check your connection!";
-
-<div className="bonus-section">
-  <h2>Bonus - another simple reusable alert component</h2>
-    <OfflineMessage type="danger" content={`${demoOfflineMessage}`} />
-    <OfflineMessage type="warning" content={`${demoOfflineMessage}`} />
-    <OfflineMessage type="success" content={`${demoOnlineMessage}`} />
-    <OfflineMessage type="info" content={`${demoInfoAndPrimaryMessage}`} />
-    <OfflineMessage type="primary" content={`${demoInfoAndPrimaryMessage}`} />
-</div>
-...
-```
+>
+>
+>```javascript
+>...
+>import OfflineMessage from "./components/bonus/offlineMessage/OfflineMessage";
+>...
+>
+>  const demoOfflineMessage = "You are offline or there is a connection problem!";
+>  const demoOnlineMessage = "You are now back online!";
+>  const demoInfoAndPrimaryMessage = "You are back online, but you should check your connection!";
+>
+><div className="bonus-section">
+>  <h2>Bonus - another simple reusable alert component</h2>
+>    <OfflineMessage type="danger" content={`${demoOfflineMessage}`} />
+>    <OfflineMessage type="warning" content={`${demoOfflineMessage}`} />
+>    <OfflineMessage type="success" content={`${demoOnlineMessage}`} />
+>    <OfflineMessage type="info" content={`${demoInfoAndPrimaryMessage}`} />
+>    <OfflineMessage type="primary" content={`${demoInfoAndPrimaryMessage}`} />
+></div>
+>...
+>```
 
 ## :bust_in_silhouette: Author
 
