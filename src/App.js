@@ -139,7 +139,7 @@ function App() {
       </div>
       <sub>Copyright - 2021 - rodolphe Augusto</sub>
       <div className="appLogo">
-        <h1>⭐My Awesome Custom Alert⭐</h1>
+        <h1>⭐My Awesome Custom Alert v1.0.0⭐</h1>
         <img src={AppPicture} alt="app logo" width="400" />
       </div>
       <div className="withoutButton Message">
