@@ -872,7 +872,7 @@ L78.64,122.741z"
           </g>
         </svg>
       </div>
-      <div className="shadow scale"></div>
+      <div className="shadow scale" />
       <div className={withButton ? "message" : "message messageWithoutButton"}>
         <h1
           className="alert-text"

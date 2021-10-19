@@ -135,7 +135,7 @@ const CustomAlertComponent = ({
       displayAlertWarning ||
       displayAlertInfo ? (
         <Fragment>
-          {overlay ? <div className="alert-overlay"></div> : null}
+          {overlay ? <div className="alert-overlay" /> : null}
 
           <div className="alert-box-content ">
             <div id="alert-container">
