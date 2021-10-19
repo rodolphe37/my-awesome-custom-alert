@@ -6,29 +6,41 @@ import WarningComponent from "./content/WarningComponent";
 import InfoComponent from "./content/InfoComponent";
 
 // YOU HAVE 4 POSSIBILITIES - SUCCESS, ERROR, INFO & WARNING ALERT -
-// AND THEN YOU CAN MAKE APPEAR OR NOT THE BUTTON
-// (IF THE BUTTON IS APPEAR, YOU CAN CUSTOMIZE THE BUTTON TEXT),
-// AND CUSTOMIZE THE MODAL BACKGROUND COLOR FOR EACH TYPE OF ALERT
+// YOU CAN CHOOSE IF YOU WANT OVERLAY EFFECT OR NOT
+// YOU CAN CHANGE THE MODAL ALERT DIMENSIONS (LITTLE, MEDIUM), IF YOU DON'T WRITE ANY PROPS THE DEFAULT DIMENSION IS NORMAL
+// YOU CAN CUSTOMIZE THE MODAL BACKGROUND COLOR FOR EACH TYPE OF ALERT
+// YOU CAN CHANGE THE TITLE TEXT & COLOR
+// YOU CAN CHANGE THE MESSAGE TEXT COLOR ASWELL
+// YOU CAN MAKE APPEAR OR NOT THE BUTTON (IF THE BUTTON IS APPEAR, YOU CAN CUSTOMIZE THE BUTTON TEXT, COLOR BUTTON & THE TIME OF AUTOMATIC CLOSING )
 const CustomAlertComponent = ({
-  success, // boolean value - for appear or not the success window
-  successMessage, // string - message success
-  error, //boolean value - for appear or not the error window
-  errorMessage, // string - message error
-  warning, // boolean value - for appear or not the warning window
-  warningMessage, // string - message warning
-  info, // boolean value - for appear or not the info window
+  success, // BOOLEAN value - for appear or not the success window
+  successMessage, // STRING - message success
+  error, //BOOLEAN value - for appear or not the error window
+  errorMessage, // STRING - message error
+  warning, // BOOLEAN value - for appear or not the warning window
+  warningMessage, // STRING - message warning
+  info, // BOOLEAN value - for appear or not the info window
+  infoMessage, // STRING - message info
+  // GLOBAL PROPS
+  overlay, // BOOLEAN - if you want overlay effect or not
+  little, // predefined values - the default size is divided by 2
+  medium, // predefined values - the default size is divided by 1/3
+  autoClose, // number - time in ms for auto cles alert when you don't have button
   customStyleColor, // HEX, rgba, hsl, gradient, etc... - Background value for modal
-  infoMessage, // string - message info
-  withButton, // boolean - value for appear or desappear the button window
-  buttonText, // string - button content
-  overlay, // boolean - if you want overlay effect or not
+  titleText, // STRING - title for each alert
+  colorTitle, // HEX, rgba, hsl, gradient, etc... - color value for title text
+  messageColor, // HEX, rgba, hsl, gradient, etc... - color value for message text
+  withButton, // BOOLEAN - value for appear or desappear the button window
+  buttonText, // STRING - button content
+  colorTextButton, // HEX, rgba, hsl, gradient, etc... - color value for button text
+  buttonBackground, // HEX, rgba, hsl, gradient, etc... - Background value for button
 }) => {
   const [displayAlertSuccess, setDisplayAlertSuccess] = useState(false); //boolean value for open or close success window
   const [displayAlertError, setDisplayAlertError] = useState(false); //boolean value for open or close error window
   const [displayAlertWarning, setDisplayAlertWarning] = useState(false); //boolean value for open or close warning window
   const [displayAlertInfo, setDisplayAlertInfo] = useState(false); //boolean value for open or close info window
 
-  const ValueTimeOut = 4000;
+  const ValueTimeOut = autoClose ? autoClose : 4000;
 
   useEffect(() => {
     if (success) {
@@ -91,6 +103,7 @@ const CustomAlertComponent = ({
     error,
     info,
     withButton,
+    ValueTimeOut,
   ]);
 
   // Close alert
@@ -123,17 +136,31 @@ const CustomAlertComponent = ({
                 <SuccessComponent
                   disabledDisplaySuccess={disabledDisplaySuccess}
                   customStyleColor={customStyleColor}
+                  little={little}
+                  medium={medium}
+                  titleText={titleText}
+                  colorTitle={colorTitle}
+                  messageColor={messageColor}
                   successMessage={successMessage}
                   withButton={withButton}
                   buttonText={buttonText}
+                  colorTextButton={colorTextButton}
+                  buttonBackground={buttonBackground}
                 />
               ) : null}
               {displayAlertError ? (
                 <ErrorComponent
                   disabledDisplayError={disabledDisplayError}
                   customStyleColor={customStyleColor}
+                  little={little}
+                  medium={medium}
+                  titleText={titleText}
+                  colorTitle={colorTitle}
+                  messageColor={messageColor}
                   withButton={withButton}
                   buttonText={buttonText}
+                  colorTextButton={colorTextButton}
+                  buttonBackground={buttonBackground}
                   errorMessage={errorMessage}
                 />
               ) : null}
@@ -141,18 +168,32 @@ const CustomAlertComponent = ({
                 <WarningComponent
                   disabledDisplayWarning={disabledDisplayWarning}
                   customStyleColor={customStyleColor}
+                  little={little}
+                  medium={medium}
+                  titleText={titleText}
+                  colorTitle={colorTitle}
+                  messageColor={messageColor}
                   warningMessage={warningMessage}
                   withButton={withButton}
                   buttonText={buttonText}
+                  colorTextButton={colorTextButton}
+                  buttonBackground={buttonBackground}
                 />
               ) : null}
               {displayAlertInfo ? (
                 <InfoComponent
                   disabledDisplayInfo={disabledDisplayInfo}
                   customStyleColor={customStyleColor}
+                  little={little}
+                  medium={medium}
+                  titleText={titleText}
+                  colorTitle={colorTitle}
+                  messageColor={messageColor}
                   infoMessage={infoMessage}
                   withButton={withButton}
                   buttonText={buttonText}
+                  colorTextButton={colorTextButton}
+                  buttonBackground={buttonBackground}
                 />
               ) : null}
             </div>

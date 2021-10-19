@@ -50,33 +50,42 @@ mobile view
 
 **You can test My Awesome Custom Alert demo** **[here](https://my-awesome-custom-alert.netlify.app/)**,
 
-**And the version with input for writing what you want during test** **[here](https://reusable-alert-tutorial.netlify.app/)**,
 
 ---
 ## Arguments and options!
 
 ### the Props availables!
+>YOU HAVE 4 POSSIBILITIES - SUCCESS, ERROR, INFO & WARNING ALERT -
+YOU CAN CHOOSE IF YOU WANT OVERLAY EFFECT OR NOT
+YOU CAN CHANGE THE MODAL ALERT DIMENSIONS (LITTLE, MEDIUM), IF YOU DON'T WRITE ANY PROPS THE DEFAULT DIMENSION IS NORMAL
+YOU CAN CUSTOMIZE THE MODAL BACKGROUND COLOR FOR EACH TYPE OF ALERT
+YOU CAN CHANGE THE TITLE TEXT & COLOR
+YOU CAN CHANGE THE MESSAGE TEXT COLOR ASWELL
+YOU CAN MAKE APPEAR OR NOT THE BUTTON (IF THE BUTTON IS APPEAR, YOU CAN CUSTOMIZE THE BUTTON TEXT, COLOR BUTTON & THE TIME OF AUTOMATIC CLOSING )
 
 ```javascript
-// YOU HAVE 4 POSSIBILITIES - SUCCESS, ERROR, INFO & WARNING ALERT -
-// AND THEN YOU CAN MAKE APPEAR OR NOT THE BUTTON
-// (IF THE BUTTON IS APPEAR, YOU CAN CUSTOMIZE THE BUTTON TEXT),
-// YOU CAN MAKE APPEAR OVERLAY EFFECT OR NOT FOR ALL ALERT INDIVIDUALLY
-// AND CUSTOMIZE THE MODAL BACKGROUND COLOR FOR EACH TYPE OF ALERT
 
-
-  success, // boolean - for appear or not the success window
-  successMessage, // string - message success
-  error, //boolean - for appear or not the error window
-  errorMessage, // string - message error
-  warning, // boolean - for appear or not the warning window
-  warningMessage, // string - message warning
-  info, // boolean - for appear or not the info window
-  infoMessage, // string - message info
+  success, // BOOLEAN value - for appear or not the success window
+  successMessage, // STRING - message success
+  error, //BOOLEAN value - for appear or not the error window
+  errorMessage, // STRING - message error
+  warning, // BOOLEAN value - for appear or not the warning window
+  warningMessage, // STRING - message warning
+  info, // BOOLEAN value - for appear or not the info window
+  infoMessage, // STRING - message info
+  // GLOBAL PROPS
+  overlay, // BOOLEAN - if you want overlay effect or not
+  little, // predefined values - the default size is divided by 2
+  medium, // predefined values - the default size is divided by 1/3
   customStyleColor, // HEX, rgba, hsl, gradient, etc... - Background value for modal
-  withButton, // boolean - for appear or desappear the button window
-  buttonText, // string - button content
-  overlay, // boolean - if you want overlay effect or not
+  titleText, // STRING - title for each alert
+  colorTitle, // HEX, rgba, hsl, gradient, etc... - color value for title text
+  messageColor, // HEX, rgba, hsl, gradient, etc... - color value for message text
+  withButton, // BOOLEAN - value for appear or desappear the button window
+  autoClose, // number - time in ms for auto cles alert when you don't have button
+  buttonText, // STRING - button content
+  colorTextButton, // HEX, rgba, hsl, gradient, etc... - color value for button text
+  buttonBackground, // HEX, rgba, hsl, gradient, etc... - Background value for button
 
 ```
 >:heavy_check_mark: Important!

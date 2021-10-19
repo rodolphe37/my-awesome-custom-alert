@@ -1,8 +1,13 @@
 const ErrorComponent = ({
   disabledDisplayError,
   withButton,
+  colorTitle,
+  titleText,
   errorMessage,
+  messageColor,
   buttonText,
+  colorTextButton,
+  buttonBackground,
   customStyleColor,
 }) => {
   return (
@@ -29,12 +34,33 @@ const ErrorComponent = ({
       </div>
       <div className="shadow move"></div>
       <div className={withButton ? "message" : "message messageWithoutButton"}>
-        <h1 className="alert-text">Error!</h1>
-        <p className="alert-parag">{errorMessage}</p>
+        <h1
+          className="alert-text"
+          style={{ color: colorTitle ? colorTitle : "#fcfcfc" }}
+        >
+          {titleText ? titleText : `Error!`}
+        </h1>
+        <p
+          className="alert-parag"
+          style={{ color: messageColor ? messageColor : "#5e5e5e" }}
+        >
+          {errorMessage}
+        </p>
       </div>
       {withButton ? (
-        <button onClick={disabledDisplayError} className="button-box">
-          <h1 className="red-text">{buttonText ? buttonText : `try again`}</h1>
+        <button
+          onClick={disabledDisplayError}
+          style={{
+            background: buttonBackground ? buttonBackground : "#fcfcfc",
+          }}
+          className="button-box"
+        >
+          <h1
+            className="text"
+            style={{ color: colorTextButton ? colorTextButton : "#e96075" }}
+          >
+            {buttonText ? buttonText : `try again`}
+          </h1>
         </button>
       ) : null}
     </div>

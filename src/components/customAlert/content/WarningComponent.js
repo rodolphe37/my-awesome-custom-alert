@@ -1,8 +1,13 @@
 const WarningComponent = ({
   disabledDisplayWarning,
+  messageColor,
+  colorTitle,
+  titleText,
   warningMessage,
   withButton,
   buttonText,
+  colorTextButton,
+  buttonBackground,
   customStyleColor,
 }) => {
   return (
@@ -866,12 +871,33 @@ L78.64,122.741z"
       </div>
       <div className="shadow scale"></div>
       <div className={withButton ? "message" : "message messageWithoutButton"}>
-        <h1 className="alert-text">warning!</h1>
-        <p className="alert-parag">{warningMessage}</p>
+        <h1
+          className="alert-text"
+          style={{ color: colorTitle ? colorTitle : "#fcfcfc" }}
+        >
+          {titleText ? titleText : `warning!`}
+        </h1>
+        <p
+          className="alert-parag"
+          style={{ color: messageColor ? messageColor : "#5e5e5e" }}
+        >
+          {warningMessage}
+        </p>
       </div>
       {withButton ? (
-        <button onClick={disabledDisplayWarning} className="button-box">
-          <h1 className="red-text">{buttonText ? buttonText : `continue`}</h1>
+        <button
+          onClick={disabledDisplayWarning}
+          style={{
+            background: buttonBackground ? buttonBackground : "#fcfcfc",
+          }}
+          className="button-box"
+        >
+          <h1
+            className="text"
+            style={{ color: colorTextButton ? colorTextButton : "#e96075" }}
+          >
+            {buttonText ? buttonText : `continue`}
+          </h1>
         </button>
       ) : null}
     </div>

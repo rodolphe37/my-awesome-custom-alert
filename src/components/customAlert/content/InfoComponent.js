@@ -1,9 +1,16 @@
 const InfoComponent = ({
   customStyleColor,
   disabledDisplayInfo,
+  titleText,
+  colorTitle,
   infoMessage,
+  messageColor,
   withButton,
   buttonText,
+  colorTextButton,
+  buttonBackground,
+  little,
+  medium,
 }) => {
   return (
     <div
@@ -11,6 +18,7 @@ const InfoComponent = ({
         background: customStyleColor
           ? customStyleColor
           : "linear-gradient(to bottom left, #69b1ea 40%, #00bcd4 100%)",
+        transform: little ? "scale(0.5)" : medium ? "scale(0.75)" : "none",
       }}
       id="info-box"
     >
@@ -28,12 +36,33 @@ const InfoComponent = ({
       </div>
       <div className="shadow scale"></div>
       <div className={withButton ? "message" : "message messageWithoutButton"}>
-        <h1 className="alert-text">Info!</h1>
-        <p className="alert-parag">{infoMessage}</p>
+        <h1
+          className="alert-text"
+          style={{ color: colorTitle ? colorTitle : "#fcfcfc" }}
+        >
+          {titleText ? titleText : `Info!`}
+        </h1>
+        <p
+          className="alert-parag"
+          style={{ color: messageColor ? messageColor : "#5e5e5e" }}
+        >
+          {infoMessage}
+        </p>
       </div>
       {withButton ? (
-        <button onClick={disabledDisplayInfo} className="button-box">
-          <h1 className="blue-text">{buttonText ? buttonText : `continue`}</h1>
+        <button
+          onClick={disabledDisplayInfo}
+          style={{
+            background: buttonBackground ? buttonBackground : "#fcfcfc",
+          }}
+          className="button-box"
+        >
+          <h1
+            className="text"
+            style={{ color: colorTextButton ? colorTextButton : "#2196f3" }}
+          >
+            {buttonText ? buttonText : `continue`}
+          </h1>
         </button>
       ) : null}
     </div>

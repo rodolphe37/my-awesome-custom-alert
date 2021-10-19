@@ -1,8 +1,13 @@
 const SuccessComponent = ({
   disabledDisplaySuccess,
+  messageColor,
   successMessage,
+  colorTitle,
+  titleText,
   withButton,
   buttonText,
+  colorTextButton,
+  buttonBackground,
   customStyleColor,
 }) => {
   return (
@@ -27,12 +32,33 @@ const SuccessComponent = ({
       </div>
       <div className="shadow scale"></div>
       <div className={withButton ? "message" : "message messageWithoutButton"}>
-        <h1 className="alert-text">Success!</h1>
-        <p className="alert-parag">{successMessage}</p>
+        <h1
+          className="alert-text"
+          style={{ color: colorTitle ? colorTitle : "#fcfcfc" }}
+        >
+          {titleText ? titleText : `Success!`}
+        </h1>
+        <p
+          className="alert-parag"
+          style={{ color: messageColor ? messageColor : "#5e5e5e" }}
+        >
+          {successMessage}
+        </p>
       </div>
       {withButton ? (
-        <button onClick={disabledDisplaySuccess} className="button-box">
-          <h1 className="green-text">{buttonText ? buttonText : `continue`}</h1>
+        <button
+          onClick={disabledDisplaySuccess}
+          style={{
+            background: buttonBackground ? buttonBackground : "#fcfcfc",
+          }}
+          className="button-box"
+        >
+          <h1
+            className="text"
+            style={{ color: colorTextButton ? colorTextButton : "#4ec07d" }}
+          >
+            {buttonText ? buttonText : `continue`}
+          </h1>
         </button>
       ) : null}
     </div>
