@@ -98,6 +98,9 @@
   nav.float-action-button {
     top: 0 !important;
   }
+  .custompictureButton {
+    display: none !important;
+  }
 }
 
 @media screen and (device-width: 1280px) {

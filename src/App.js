@@ -135,11 +135,11 @@ function App() {
         </div>
       )}
       <button
-        className="button-boxApp"
+        className="button-boxApp custompictureButton"
         style={{ background: "purple", color: "#fff", fontWeight: "bold" }}
         onClick={handleClickWithCustomPicture}
       >
-        {!withCustomPicture ? `With custom Image?` : `With default emojis`}
+        {!withCustomPicture ? `With custom Image?` : `With default emojis?`}
       </button>
       <div className="bonus-section">
         <h2>Bonus - another simple reusable alert component</h2>
