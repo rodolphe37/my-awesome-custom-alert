@@ -125,6 +125,8 @@ const ExampleComponent = () => {
     <CustomAlertComponent
       success
       successMessage="yay, everything is working."
+      // If you want normal size alert modal remove this line below.
+      medium
       // If you dont want custom background color, just remove this line below, the default color will be chosed.
       customStyleColor="#ef8f9e" // Background value for the modal (ex: HEX, rgba, hsl, gradient, etc...)
       // if you don't want overlay effect remove this line below
@@ -240,9 +242,8 @@ const ExampleComponent = () => {
       customStyleColor="hsl(351, 75%, 75%)" // Background value for the modal (ex: HEX, rgba, hsl, gradient, etc...)
       // if you don't want overlay effect remove this line below
       overlay
-      // If you dont want button, remove this line below.
-      withButton
-      // If you dont write buttonText props, the default text is choosed.
+      // If you dont want custom timeout, remove this line below (the default value is 4000ms).
+      autoClose={5000}
     />
   );
 
