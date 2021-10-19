@@ -124,9 +124,9 @@ const ExampleComponent = () => {
   const SuccessAlert = () => (
     <CustomAlertComponent
       success
-       // If you dont want custom background color, just remove this line below, the default color will be chosed.
-      customStyleColor="#ef8f9e" // Background value for the modal (ex: HEX, rgba, hsl, gradient, etc...)
       successMessage="yay, everything is working."
+      // If you dont want custom background color, just remove this line below, the default color will be chosed.
+      customStyleColor="#ef8f9e" // Background value for the modal (ex: HEX, rgba, hsl, gradient, etc...)
       // if you don't want overlay effect remove this line below
       overlay
       // If you dont want button, just remove this two lines below.
@@ -179,9 +179,9 @@ const ExampleComponent = () => {
   const InfoAlert = () => (
     <CustomAlertComponent
       info
+      infoMessage="info! be read carefully."
       // If you dont want custom background color, just remove this line below, the default gradient color will be choosed.
       customStyleColor="rgba(255, 255,255, 0.7)" // Background value for the modal (ex: HEX, rgba, hsl, gradient, etc...)
-      infoMessage="info! be read carefully."
       // if you don't want overlay effect remove this line below
       overlay
       // If you dont want button, remove this line below.
@@ -235,9 +235,9 @@ const ExampleComponent = () => {
   const WarningAlert = () => (
     <CustomAlertComponent
       warning
+      warningMessage="Be careful what you ask for, you might end up with this!"
       // If you dont want custom background color, just remove this line below, the default color will be chosed.
       customStyleColor="hsl(351, 75%, 75%)" // Background value for the modal (ex: HEX, rgba, hsl, gradient, etc...)
-      warningMessage="Be careful what you ask for, you might end up with this!"
       // if you don't want overlay effect remove this line below
       overlay
       // If you dont want button, remove this line below.
@@ -290,9 +290,9 @@ const ExampleComponent = () => {
   const ErrorAlert = () => (
     <CustomAlertComponent
       error
+      errorMessage="oh no, something went wrong."
       // If you dont want custom background color, just remove this line below, the default color will be chosed.
       customStyleColor="red" // Background value for the modal (ex: HEX, rgba, hsl, gradient, etc...)
-      errorMessage="oh no, something went wrong."
       // if you don't want overlay effect remove this line below
       overlay
       // If you dont want button, just remove this two lines below.
