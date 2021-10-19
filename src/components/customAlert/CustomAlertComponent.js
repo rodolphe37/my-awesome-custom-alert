@@ -26,14 +26,14 @@ const CustomAlertComponent = ({
   little, // predefined values - the default size of the alert is divided by 2
   medium, // predefined values - the default size of the alert is divided by 1/3
   autoClose, // NUMBER - time in ms for auto closes alert when you don't have button
-  customStyleColor, // HEX, rgba, hsl, gradient, etc... - Background value for modal
+  customStyleColor, // HEX, rgba, hsl, gradient, etc... - Background color value for modal
   titleText, // STRING - title for each alert
   colorTitle, // HEX, rgba, hsl, gradient, etc... - color value for title text
   messageColor, // HEX, rgba, hsl, gradient, etc... - color value for message text
   withButton, // BOOLEAN - value for appear or desappear the button window
   buttonText, // STRING - button content
   colorTextButton, // HEX, rgba, hsl, gradient, etc... - color value for button text
-  buttonBackground, // HEX, rgba, hsl, gradient, etc... - Background value for button
+  buttonBackground, // HEX, rgba, hsl, gradient, etc... - Background color value for button
 }) => {
   const [displayAlertSuccess, setDisplayAlertSuccess] = useState(false); //boolean value for open or close success window
   const [displayAlertError, setDisplayAlertError] = useState(false); //boolean value for open or close error window
