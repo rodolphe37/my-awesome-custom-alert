@@ -13,13 +13,13 @@ import InfoComponent from "./content/InfoComponent";
 // YOU CAN CHANGE THE MESSAGE TEXT COLOR ASWELL
 // YOU CAN MAKE APPEAR OR NOT THE BUTTON (IF THE BUTTON IS APPEAR, YOU CAN CUSTOMIZE THE BUTTON TEXT, COLOR BUTTON & THE TIME OF AUTOMATIC CLOSING )
 const CustomAlertComponent = ({
-  success, // BOOLEAN value - for appear or not the success window
+  success, // BOOLEAN - for appear or not the success window
   successMessage, // STRING - message success
-  error, //BOOLEAN value - for appear or not the error window
+  error, //BOOLEAN - for appear or not the error window
   errorMessage, // STRING - message error
-  warning, // BOOLEAN value - for appear or not the warning window
+  warning, // BOOLEAN - for appear or not the warning window
   warningMessage, // STRING - message warning
-  info, // BOOLEAN value - for appear or not the info window
+  info, // BOOLEAN - for appear or not the info window
   infoMessage, // STRING - message info
   // GLOBAL PROPS
   overlay, // BOOLEAN - if you want overlay effect or not
