@@ -43,50 +43,57 @@ const CustomAlertComponent = ({
   const ValueTimeOut = autoClose ? autoClose : 4000;
 
   useEffect(() => {
-    if (success) {
-      setDisplayAlertSuccess(true);
-      setDisplayAlertError(false);
-      setDisplayAlertWarning(false);
-      setDisplayAlertInfo(false);
-      if (!withButton) {
-        setTimeout(() => {
-          setDisplayAlertSuccess(false);
-        }, ValueTimeOut);
-      }
+    switch (success || error || warning || info) {
+      case success:
+        setDisplayAlertSuccess(true);
+        setDisplayAlertError(false);
+        setDisplayAlertWarning(false);
+        setDisplayAlertInfo(false);
+        if (!withButton) {
+          setTimeout(() => {
+            setDisplayAlertSuccess(false);
+          }, ValueTimeOut);
+        }
+        break;
+      case error:
+        setDisplayAlertError(true);
+        setDisplayAlertSuccess(false);
+        setDisplayAlertWarning(false);
+        setDisplayAlertInfo(false);
+        if (!withButton) {
+          setTimeout(() => {
+            setDisplayAlertError(false);
+          }, ValueTimeOut);
+        }
+        break;
+
+      case warning:
+        setDisplayAlertWarning(true);
+        setDisplayAlertSuccess(false);
+        setDisplayAlertError(false);
+        setDisplayAlertInfo(false);
+        if (!withButton) {
+          setTimeout(() => {
+            setDisplayAlertWarning(false);
+          }, ValueTimeOut);
+        }
+        break;
+      case info:
+        setDisplayAlertInfo(true);
+        setDisplayAlertWarning(false);
+        setDisplayAlertSuccess(false);
+        setDisplayAlertError(false);
+        if (!withButton) {
+          setTimeout(() => {
+            setDisplayAlertInfo(false);
+          }, ValueTimeOut);
+        }
+        break;
+
+      default:
+        break;
     }
-    if (error) {
-      setDisplayAlertError(true);
-      setDisplayAlertSuccess(false);
-      setDisplayAlertWarning(false);
-      setDisplayAlertInfo(false);
-      if (!withButton) {
-        setTimeout(() => {
-          setDisplayAlertError(false);
-        }, ValueTimeOut);
-      }
-    }
-    if (warning) {
-      setDisplayAlertWarning(true);
-      setDisplayAlertSuccess(false);
-      setDisplayAlertError(false);
-      setDisplayAlertInfo(false);
-      if (!withButton) {
-        setTimeout(() => {
-          setDisplayAlertWarning(false);
-        }, ValueTimeOut);
-      }
-    }
-    if (info) {
-      setDisplayAlertInfo(true);
-      setDisplayAlertWarning(false);
-      setDisplayAlertSuccess(false);
-      setDisplayAlertError(false);
-      if (!withButton) {
-        setTimeout(() => {
-          setDisplayAlertInfo(false);
-        }, ValueTimeOut);
-      }
-    }
+
     return () => {
       setDisplayAlertSuccess(false);
       setDisplayAlertError(false);
