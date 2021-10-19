@@ -25,7 +25,7 @@ const CustomAlertComponent = ({
   overlay, // BOOLEAN - if you want overlay effect or not
   little, // predefined values - the default size is divided by 2
   medium, // predefined values - the default size is divided by 1/3
-  autoClose, // number - time in ms for auto cles alert when you don't have button
+  autoClose, // NUMBER - time in ms for auto closes alert when you don't have button
   customStyleColor, // HEX, rgba, hsl, gradient, etc... - Background value for modal
   titleText, // STRING - title for each alert
   colorTitle, // HEX, rgba, hsl, gradient, etc... - color value for title text

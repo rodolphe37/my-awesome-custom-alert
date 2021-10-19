@@ -61,25 +61,24 @@ mobile view
 
 
 ```javascript
-
-  success, // BOOLEAN value - for appear or not the success window
+  success, // BOOLEAN - for appear or not the success window
   successMessage, // STRING - message success
-  error, //BOOLEAN value - for appear or not the error window
+  error, //BOOLEAN - for appear or not the error window
   errorMessage, // STRING - message error
-  warning, // BOOLEAN value - for appear or not the warning window
+  warning, // BOOLEAN - for appear or not the warning window
   warningMessage, // STRING - message warning
-  info, // BOOLEAN value - for appear or not the info window
+  info, // BOOLEAN - for appear or not the info window
   infoMessage, // STRING - message info
   // GLOBAL PROPS
   overlay, // BOOLEAN - if you want overlay effect or not
   little, // predefined values - the default size is divided by 2
   medium, // predefined values - the default size is divided by 1/3
+  autoClose, // NUMBER - time in ms for auto closes alert when you don't have button
   customStyleColor, // HEX, rgba, hsl, gradient, etc... - Background value for modal
   titleText, // STRING - title for each alert
   colorTitle, // HEX, rgba, hsl, gradient, etc... - color value for title text
   messageColor, // HEX, rgba, hsl, gradient, etc... - color value for message text
   withButton, // BOOLEAN - value for appear or desappear the button window
-  autoClose, // NUMBER - time in ms for auto cles alert when you don't have button
   buttonText, // STRING - button content
   colorTextButton, // HEX, rgba, hsl, gradient, etc... - color value for button text
   buttonBackground, // HEX, rgba, hsl, gradient, etc... - Background value for button
