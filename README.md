@@ -27,6 +27,7 @@ it's a reusable custom alert component!
 > - & error,
 > - you can choose if you want overlay effect or not
 > - you can change the modal alert dimensions (little, medium), if you don't write any props the default dimension is normal
+> - you can change default emoji with custom picture
 > - you can customize the modal background color for each type of alert
 > - you can change the title text & color
 > - you can change the message text color aswell
@@ -82,6 +83,7 @@ mobile view
   buttonText, // STRING - button content
   colorTextButton, // HEX, rgba, hsl, gradient, etc... - color value for button text
   buttonBackground, // HEX, rgba, hsl, gradient, etc... - Background color value for button
+  alertImg, // IMAGE (svg, png, jpg, emoji, icon...)
 
 ```
 >:heavy_check_mark: Important!
@@ -110,6 +112,7 @@ OK, the interesting part begins!
 ```javascript
 import { useState } from "react";
 import CustomAlertComponent from "./components/customAlert/CustomAlertComponent";
+import Me from "./assets/perso.png";
 
 const ExampleComponent = () => {
    const [displaySuccess, setDisplaySuccess] = useState(false);
@@ -127,6 +130,7 @@ const ExampleComponent = () => {
       successMessage="yay, everything is working."
       // If you want normal size alert modal remove this line below.
       medium
+      alertImg={Me}
       // If you dont want custom background color, just remove this line below, the default color will be chosed.
       customStyleColor="#ef8f9e" // Background value for the modal (ex: HEX, rgba, hsl, gradient, etc...)
       // if you don't want overlay effect remove this line below
@@ -182,6 +186,7 @@ const ExampleComponent = () => {
     <CustomAlertComponent
       info
       infoMessage="info! be read carefully."
+      little
       // If you dont want custom background color, just remove this line below, the default gradient color will be choosed.
       customStyleColor="rgba(255, 255,255, 0.7)" // Background value for the modal (ex: HEX, rgba, hsl, gradient, etc...)
       // if you don't want overlay effect remove this line below
