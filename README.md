@@ -329,7 +329,7 @@ export default ExampleComponent;
 
 ## For more style customization!
 
->you can change more stylesif you want...
+>you can change more styles if you want...
 >
 >For that you must go to the ```customeAlertStyle.css```, all css styles for all usercase are here and commented!
 
