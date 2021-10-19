@@ -131,7 +131,7 @@ const ExampleComponent = () => {
       successMessage="yay, everything is working."
       // If you want normal size alert modal remove this line below.
       medium
-      // If you dont want custom picture, remove this line below. the default emojis will be chosed.
+      // If you dont want custom picture, remove this line below. the default emoji will be chosed.
       alertImg={Me}
       // If you dont want custom background color, just remove this line below, the default color will be chosed.
       customStyleColor="#ef8f9e" // Background value for the modal (ex: HEX, rgba, hsl, gradient, etc...)
