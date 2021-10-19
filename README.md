@@ -8,7 +8,7 @@
 
 
 [![Website](https://i.imgur.com/xSu6S5v.png)](https://rodolphe-augusto.fr)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1301122d-875e-40d0-bd96-91ffe9af869b/deploy-status)](https://app.netlify.com/sites/my-awesome-custom-alert/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a56f101d-3254-472e-815e-96c55581bca1/deploy-status)](https://app.netlify.com/sites/my-awesome-custom-alert/deploys)
 
 # Documentation
 
