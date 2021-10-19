@@ -66,7 +66,6 @@ const CustomAlertComponent = ({
           }, ValueTimeOut);
         }
         break;
-
       case warning:
         setDisplayAlertWarning(true);
         setDisplayAlertSuccess(false);
