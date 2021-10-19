@@ -319,7 +319,7 @@
 .button-box {
   position: absolute;
   width: 50%;
-  height: 15%;
+  height: auto;
   border-radius: 20px;
   top: 73%;
   left: 25%;
@@ -723,6 +723,9 @@
   .errorCustomPicture {
     transform: scale(0.6) !important;
   }
+  .infoCustomPicture {
+    transform: scale(1) translate(-8rem, 0px) !important;
+  }
   .emoji--wow {
     transform: scale(0.5) translate(-10em, -4em);
   }
@@ -754,8 +757,16 @@
   .successCustomPicture {
     transform: scale(0.5) translate(-14rem, -7rem) !important;
   }
+  .infoCustomPicture {
+    transform: scale(1) translate(-8rem, 0px) !important;
+  }
 }
 /* Medium screens */
+@media screen and (max-height: 500px) {
+  .infoCustomPicture {
+    transform: scale(1) translate(-8rem, -10px) !important;
+  }
+}
 @media screen and (device-width: 1280px) {
   .emoji--yay {
     transform: scale(0.4) translate(-12em, -80px) !important;
@@ -770,7 +781,19 @@
     transform: scale(0.4);
   }
 }
-@media screen and (min-width: 1280px) and (max-width: 1600px) {
+@media screen and (device-width: 1280px) {
+  .mobileWarning {
+    transform: scale(0.6) translate(-8.1em, -4rem) !important;
+  }
+  .successCustomPicture {
+    transform: scale(0.37) translate(-20rem, -13rem) !important;
+  }
+  .errorCustomPicture {
+    transform: scale(0.4) !important;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1600px) {
   #alert-container {
     max-height: 42vh;
   }

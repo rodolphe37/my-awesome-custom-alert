@@ -34,10 +34,10 @@ const InfoComponent = ({
             style={{
               width: "5em",
               height: "5em",
-              transform: "translate(-8.5em, 0px)",
+              transform: "scale(1.2) translate(-8.5em, 0px)",
               animation: "bounce 1s ease-in infinite",
             }}
-            className="emoji emoji--wow"
+            className="emoji emoji--wow infoCustomPicture"
           />
         ) : (
           <div className="emoji emoji--wow">
