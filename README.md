@@ -14,7 +14,7 @@
 
 ---
 
-## My Awesome Custom Alert
+## My Awesome Custom Alert v1.0.0
 
 it's a reusable custom alert component!
 
