@@ -346,7 +346,7 @@ export default ExampleComponent;
 
 >## :heavy_exclamation_mark: Bonus - another simple reusable alert component
 >
->![alt text](demo/simple-alert-bonus.png "My AwesomeCustom Alert")
+>![alt text](demo/simple-alert-bonus.png "My AwesomeCustom Alert Bonus")
 >
 >***The procedure and code implementation is similar to the other component!***
 >
