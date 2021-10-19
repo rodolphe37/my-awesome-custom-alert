@@ -84,7 +84,7 @@ mobile view
   buttonText, // STRING - button content
   colorTextButton, // HEX, rgba, hsl, gradient, etc... - color value for button text
   buttonBackground, // HEX, rgba, hsl, gradient, etc... - Background color value for button
-  alertImg, // IMAGE (svg, png, jpg, emoji, icon...) - for replace all default emoji by your own pictures.
+  alertImg, // IMAGE (svg, png, jpg...) - for replace all default emoji by your own pictures.
 
 ```
 >:heavy_check_mark: Important!
