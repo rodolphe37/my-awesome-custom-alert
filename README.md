@@ -69,7 +69,7 @@ mobile view
   warningMessage, // STRING - message warning
   info, // BOOLEAN - for appear or not the info window
   infoMessage, // STRING - message info
-  // GLOBAL PROPS
+  // GLOBAL MODAL STYLES PROPS
   overlay, // BOOLEAN - if you want overlay effect or not
   little, // predefined values - the default size is divided by 2
   medium, // predefined values - the default size is divided by 1/3
