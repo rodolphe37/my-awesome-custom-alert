@@ -30,7 +30,7 @@ it's a reusable custom alert component!
 > - you can customize the modal background color for each type of alert
 > - you can change the title text & color
 > - you can change the message text color aswell
-> - you can make appear or not the button (if the button is appear, you can customize the button text, color button & the time of automatic closing )
+> - you can make appear or not the button (if the button is appear, you can customize the button text, color button. If the button do not appear, you can change the time of automatic closing )
 
 ---
 
