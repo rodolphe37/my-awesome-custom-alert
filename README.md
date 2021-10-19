@@ -25,6 +25,7 @@ it's a reusable custom alert component!
 > - info,
 > - warning
 > - & error,
+> - you can put a personal image or keep the default emojis for each alert.
 > - you can choose if you want overlay effect or not
 > - you can change the modal alert dimensions (little, medium), if you don't write any props the default dimension is normal
 > - you can change default emoji with custom picture
@@ -130,6 +131,7 @@ const ExampleComponent = () => {
       successMessage="yay, everything is working."
       // If you want normal size alert modal remove this line below.
       medium
+      // If you dont want custom picture, remove this line below. the default emojis will be chosed.
       alertImg={Me}
       // If you dont want custom background color, just remove this line below, the default color will be chosed.
       customStyleColor="#ef8f9e" // Background value for the modal (ex: HEX, rgba, hsl, gradient, etc...)

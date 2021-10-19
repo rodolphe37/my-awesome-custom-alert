@@ -84,6 +84,7 @@
   width: 16em;
   height: 55px;
   right: auto;
+  z-index: 8;
 }
 
 @media screen and (max-width: 500px) {
@@ -108,12 +109,17 @@
     top: 0 !important;
   }
   .custompictureButton {
-    position: absolute;
-    bottom: 7em;
-    left: 6rem;
-    width: 16em;
-    height: 55px;
-    right: auto;
+    left: 6rem !important;
+  }
+}
+@media screen and (device-width: 768px) {
+  .custompictureButton {
+    left: 37% !important;
+  }
+}
+@media screen and (device-width: 1024px) {
+  .custompictureButton {
+    left: 40% !important;
   }
 }
 
