@@ -142,7 +142,7 @@ function App() {
         {/*Real life usercase to OfflineMessageComponent here; lol */}
         {!withButtonOption ? (
           <OfflineMessage
-            type="warning"
+            type="danger"
             content={
               "When you do not display a button in the alert window, the modal closes automatically after 4 seconds."
             }
