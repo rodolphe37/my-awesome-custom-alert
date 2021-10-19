@@ -79,7 +79,7 @@ mobile view
   colorTitle, // HEX, rgba, hsl, gradient, etc... - color value for title text
   messageColor, // HEX, rgba, hsl, gradient, etc... - color value for message text
   withButton, // BOOLEAN - value for appear or desappear the button window
-  autoClose, // number - time in ms for auto cles alert when you don't have button
+  autoClose, // NUMBER - time in ms for auto cles alert when you don't have button
   buttonText, // STRING - button content
   colorTextButton, // HEX, rgba, hsl, gradient, etc... - color value for button text
   buttonBackground, // HEX, rgba, hsl, gradient, etc... - Background value for button
