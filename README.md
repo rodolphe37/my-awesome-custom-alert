@@ -238,6 +238,8 @@ const ExampleComponent = () => {
     <CustomAlertComponent
       warning
       warningMessage="Be careful what you ask for, you might end up with this!"
+      // If you dont write messageColor props, the default color is chosed.
+      messageColor="#fff"
       // If you dont want custom background color, just remove this line below, the default color will be chosed.
       customStyleColor="hsl(351, 75%, 75%)" // Background value for the modal (ex: HEX, rgba, hsl, gradient, etc...)
       // if you don't want overlay effect remove this line below
@@ -291,6 +293,10 @@ const ExampleComponent = () => {
   const ErrorAlert = () => (
     <CustomAlertComponent
       error
+      // If you dont write title props, the default text is chosed.
+      title="OUPS, Not working..."
+      // If you dont write colorTitle props, the default color is chosed.
+      colorTitle="#000"
       errorMessage="oh no, something went wrong."
       // If you dont want custom background color, just remove this line below, the default color will be chosed.
       customStyleColor="red" // Background value for the modal (ex: HEX, rgba, hsl, gradient, etc...)
