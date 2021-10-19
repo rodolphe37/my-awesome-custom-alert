@@ -95,7 +95,11 @@
   .withoutButton.Message {
     left: -6px;
   }
+  nav.float-action-button {
+    top: 0 !important;
+  }
 }
+
 @media screen and (device-width: 1280px) {
   .bonus-section {
     top: 15px;
