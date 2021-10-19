@@ -33,10 +33,10 @@ const SuccessComponent = ({
             style={{
               width: "12em",
               height: "12em",
-              transform: "translate(-7em, -3rem) scale(0.5)",
+              transform: "translate(-7em, -5rem) scale(0.5) !important",
             }}
             alt="alert-img"
-            className="emoji emoji--yay"
+            className="emoji successCustomPicture"
           />
         ) : (
           <div className="emoji emoji--yay">

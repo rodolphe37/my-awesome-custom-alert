@@ -30,13 +30,13 @@ const WarningComponent = ({
         {alertImg ? (
           <img
             style={{
-              transform: "translate(-4.2em, 4px)",
-              width: "6rem",
-              height: "6rem",
+              transform: "translate(-5.2em, 4px)",
+              width: "8rem",
+              height: "8rem",
             }}
             src={alertImg}
             alt="alert-img"
-            className="emoji emoji--yay"
+            className="emoji mobileWarning"
           />
         ) : (
           <svg

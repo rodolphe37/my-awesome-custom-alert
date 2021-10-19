@@ -37,7 +37,7 @@ const ErrorComponent = ({
             }}
             src={alertImg}
             alt="alert-img"
-            className="emoji emoji--angry"
+            className="emoji emoji--angry errorCustomPicture"
           />
         ) : (
           <div className="emoji emoji--angry">

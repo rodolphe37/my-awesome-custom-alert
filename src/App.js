@@ -71,7 +71,7 @@ function App() {
       info
       infoMessage="info! be read carefully."
       alertImg={withCustomPicture ? Me : null}
-      little
+      medium
       // if you don't want overlay effect remove this line below
       overlay
       // If you dont want button, remove this line below - if you want a button just type withButton and that's all.

@@ -312,6 +312,10 @@
   bottom: -10%;
 }
 
+.successCustomPicture {
+  transform: scale(0.7) translate(-10rem, -2rem) !important;
+}
+
 .button-box {
   position: absolute;
   width: 50%;
@@ -482,6 +486,9 @@
 /* Emoji Yay */
 
 .emoji--yay {
+  transform: scale(0.5) translate(-9.7em, -50px);
+}
+.mobileWarning {
   transform: scale(0.5) translate(-9.7em, -50px);
 }
 
@@ -707,6 +714,15 @@
   .emoji--yay {
     transform: scale(0.4) translate(-12em, -82px) !important;
   }
+  .mobileWarning {
+    transform: scale(0.7) translate(-7.1em, -3rem) !important;
+  }
+  .successCustomPicture {
+    transform: scale(0.5) translate(-14rem, -9rem) !important;
+  }
+  .errorCustomPicture {
+    transform: scale(0.6) !important;
+  }
   .emoji--wow {
     transform: scale(0.5) translate(-10em, -4em);
   }
@@ -732,6 +748,12 @@
   #success-box {
     width: 66% !important;
   }
+  .mobileWarning {
+    transform: scale(0.7) translate(-7.1em, -3rem) !important;
+  }
+  .successCustomPicture {
+    transform: scale(0.5) translate(-14rem, -7rem) !important;
+  }
 }
 /* Medium screens */
 @media screen and (device-width: 1280px) {
@@ -754,6 +776,15 @@
   }
   .face {
     top: -70% !important;
+  }
+  .mobileWarning {
+    transform: scale(0.7) translate(-7.1em, -3rem) !important;
+  }
+  .errorCustomPicture {
+    transform: scale(0.6) !important;
+  }
+  .successCustomPicture {
+    transform: scale(0.5) translate(-14rem, -5rem) !important;
   }
 }
 
