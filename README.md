@@ -25,7 +25,6 @@ it's a reusable custom alert component!
 > - info,
 > - warning
 > - & error,
-> - you have 4 possibilities - success, error, info & warning alert -
 > - you can choose if you want overlay effect or not
 > - you can change the modal alert dimensions (little, medium), if you don't write any props the default dimension is normal
 > - you can customize the modal background color for each type of alert
