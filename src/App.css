@@ -32,7 +32,7 @@
   justify-content: center;
 }
 .withoutButton.Message .offlineMessCOntainer {
-  top: 0 !important;
+  top: -91px !important;
   left: -4px !important;
 }
 
@@ -77,6 +77,15 @@
   z-index: 6 !important;
 }
 
+.custompictureButton {
+  position: absolute;
+  bottom: 8em;
+  left: 44%;
+  width: 16em;
+  height: 55px;
+  right: auto;
+}
+
 @media screen and (max-width: 500px) {
   sub {
     position: fixed;
@@ -99,7 +108,12 @@
     top: 0 !important;
   }
   .custompictureButton {
-    display: none !important;
+    position: absolute;
+    bottom: 7em;
+    left: 6rem;
+    width: 16em;
+    height: 55px;
+    right: auto;
   }
 }
 
