@@ -5,6 +5,7 @@
 [![GitHub issues](https://badgen.net/github/issues/rodolphe37/my-awesome-custom-alert/)](https://github.com/rodolphe37/my-awesome-custom-alert/issues)
 [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/rodolphe37/my-awesome-custom-alert)
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
+[!(https://badges.aleen42.com/src/react.svg)](https://github.com/facebook/react)
 
 
 [![Website](https://i.imgur.com/xSu6S5v.png)](https://rodolphe-augusto.fr)
