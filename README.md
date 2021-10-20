@@ -7,7 +7,6 @@
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
 <img   src="https://badges.aleen42.com/src/react.svg" alt="drawing" height="20" width="65"/>
 
-
 [![Website](https://i.imgur.com/xSu6S5v.png)](https://rodolphe-augusto.fr)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c8dbd5d8-81a2-4418-9806-2470cba4a5d9/deploy-status)](https://app.netlify.com/sites/infallible-haibt-1a6163/deploys)
 
